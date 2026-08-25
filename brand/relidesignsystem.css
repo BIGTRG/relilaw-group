@@ -1,0 +1,599 @@
+/* ==========================================================================
+   RELI DESIGN SYSTEM — v1
+   Robinson Employment Law Institute
+   A trade name of Robinson Employment Institute, LLC.
+
+   Drop this file in and build against the tokens and classes below.
+   Do not hardcode a hex value anywhere in application CSS. If a colour
+   you need is not a token, the token is missing — add it here.
+
+   CONTRAST IS PRE-CHECKED. Every text pairing below has been measured
+   against WCAG 2.2 AA. The rules in §1.3 are not stylistic preferences;
+   three obvious-looking brand pairings fail, and they are named there.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   FONTS
+   Self-host in production. Do not depend on a third-party CDN for the brand.
+   @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600;700&display=swap');
+   -------------------------------------------------------------------------- */
+
+/* ==========================================================================
+   1. TOKENS
+   ========================================================================== */
+
+:root {
+  /* --- 1.1 Brand constants — identical in both themes ------------------- */
+  --brand-ink:        #0E1922;   /* the Robinson ink */
+  --brand-brass:      #B8863B;   /* the Robinson brass */
+  --brand-brass-deep: #8A5E14;   /* text-safe brass, light ground only */
+  --brand-brass-lift: #D6A44B;   /* text-safe brass, dark ground only */
+  --brand-slate:      #6E7C8A;
+  --brand-mist:       #C3CBD3;
+
+  /* --- 1.2 Surfaces ----------------------------------------------------- */
+  --bg:        #FBFAF8;  /* page ground — warm, not pure white */
+  --surface:   #FFFFFF;  /* cards, panels */
+  --surface-2: #F5F6F8;  /* recessed: table heads, code, inset rows */
+  --line:      #E1E6EC;  /* hairlines, card borders */
+  --line-firm: #C9D2DB;  /* input borders, dividers that must be seen */
+
+  /* --- 1.3 Text — READ THE RULES ---------------------------------------
+     Measured against --bg (#FBFAF8):
+
+       --text        #0E1922   17.05:1   any size                    PASS
+       --text-2      #48545F    7.43:1   any size                    PASS
+       --text-3      #6E7C8A    4.10:1   LARGE TEXT ONLY             FAILS AA small
+       --brass       #B8863B    3.09:1   NON-TEXT / DECOR ONLY       FAILS AA
+       --brass-deep  #8A5E14    5.45:1   any size                    PASS
+
+     Three rules follow, and an agent will get all three wrong by default:
+
+       1. Brass #B8863B is NEVER used for text on a light ground. It is a
+          rule, a border, an icon, a fill. For brass-coloured *words*, use
+          --accent-text (#8A5E14).
+       2. Slate #6E7C8A is NEVER used for body copy. It is legal only at
+          >=24px, or >=18.66px bold. For muted running text, use --text-2.
+       3. Belt orange #CC6B2C at 3.53:1 is a fill and a large-text colour.
+          Never small text on light.
+     ------------------------------------------------------------------- */
+  --text:      #0E1922;
+  --text-2:    #48545F;  /* muted running text, captions, help text */
+  --text-3:    #6E7C8A;  /* large text and non-text UI only */
+  --text-on-accent: #FFFFFF;
+
+  /* --- 1.4 Accent ------------------------------------------------------- */
+  --accent:        #B8863B;  /* fills, rules, icons, borders — NOT text */
+  --accent-text:   #8A5E14;  /* the same idea, safe as words */
+  --accent-soft:   #F3E8D2;  /* tinted ground */
+  --accent-hover:  #A0742F;
+  --accent-ring:   rgba(184, 134, 59, .34);
+
+  /* --- 1.5 Semantic — separate from the accent, always -------------------
+     Never carry meaning in brass. Brass means "Robinson", not "good". */
+  --ok:        #1C6A52;  --ok-soft:   #DEEFE8;
+  --warn:      #A15A16;  --warn-soft: #FBF1E9;
+  --risk:      #8C2F27;  --risk-soft: #F8E6E3;
+  --info:      #2C6FA8;  --info-soft: #E7EFF7;
+
+  /* --- 1.6 The nine ranks -----------------------------------------------
+     PROVISIONAL — Orange (#CC6B2C) is confirmed from the brand package.
+     The other eight are harmonised proposals and need sign-off before
+     they go on a certificate. Serve them as DATA on the rank record from
+     the Learning Core, not as hardcoded CSS: a second product using the
+     same Core will have entirely different ranks.
+     --rank-N-ink is the text colour to use ON the fill. */
+  --rank-1: #D8DCE0;  --rank-1-ink: #0E1922;  /* White   */
+  --rank-2: #D8A93C;  --rank-2-ink: #0E1922;  /* Yellow  */
+  --rank-3: #CC6B2C;  --rank-3-ink: #FFFFFF;  /* Orange  */
+  --rank-4: #3E7D5C;  --rank-4-ink: #FFFFFF;  /* Green   */
+  --rank-5: #2C6FA8;  --rank-5-ink: #FFFFFF;  /* Blue    */
+  --rank-6: #6A5090;  --rank-6-ink: #FFFFFF;  /* Purple  */
+  --rank-7: #6B4A33;  --rank-7-ink: #FFFFFF;  /* Brown   */
+  --rank-8: #1B242C;  --rank-8-ink: #FFFFFF;  /* Black   */
+  --rank-9: #B8863B;  --rank-9-ink: #0E1922;  /* Sensei  */
+
+  /* --- 1.7 Type --------------------------------------------------------- */
+  --font-display: Newsreader, Georgia, "Times New Roman", serif;
+  --font-body:    "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono:    "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* 1.25 scale off a 16px base */
+  --t-xs:   0.75rem;   /* 12 — labels, eyebrows */
+  --t-sm:   0.8125rem; /* 13 — captions, table cells */
+  --t-md:   0.875rem;  /* 14 — dense UI */
+  --t-base: 1rem;      /* 16 — body */
+  --t-lg:   1.125rem;  /* 18 — lead paragraph */
+  --t-xl:   1.3125rem; /* 21 — h4 */
+  --t-2xl:  1.625rem;  /* 26 — h3 */
+  --t-3xl:  2.0625rem; /* 33 — h2 */
+  --t-4xl:  2.625rem;  /* 42 — h1 */
+
+  --lh-tight: 1.18;
+  --lh-snug:  1.38;
+  --lh-body:  1.62;
+
+  /* --- 1.8 Space — 4px base --------------------------------------------- */
+  --s1: 4px;  --s2: 8px;  --s3: 12px; --s4: 16px;
+  --s5: 24px; --s6: 32px; --s7: 48px; --s8: 64px; --s9: 96px;
+
+  /* --- 1.9 Shape and depth ---------------------------------------------- */
+  --r1: 4px; --r2: 8px; --r3: 12px; --r-pill: 999px;
+  --shadow-1: 0 1px 2px rgba(14,25,34,.05);
+  --shadow-2: 0 2px 8px rgba(14,25,34,.07), 0 1px 2px rgba(14,25,34,.04);
+  --shadow-3: 0 12px 32px rgba(14,25,34,.13);
+
+  --measure: 66ch;          /* running text never wider than this */
+  --focus-ring: 2px solid var(--accent);
+  --focus-offset: 2px;
+}
+
+/* --- 1.10 Dark theme ----------------------------------------------------
+   System default (nothing stamped on :root) is handled by the media query.
+   The [data-theme] blocks let an explicit toggle win in both directions.
+   Only tokens are redefined here. No component ever styles itself inside
+   a theme block — that is the classic unreadable-artifact bug.
+   ------------------------------------------------------------------------ */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg:        #0B1319;
+    --surface:   #131E26;
+    --surface-2: #18242D;
+    --line:      #22323D;
+    --line-firm: #344652;
+
+    --text:      #F2F0EC;
+    --text-2:    #C3CBD3;
+    --text-3:    #94A2AE;
+    --text-on-accent: #0E1922;
+
+    --accent:      #D6A44B;
+    --accent-text: #E0B96E;
+    --accent-soft: #2B2415;
+    --accent-hover:#E0B96E;
+    --accent-ring: rgba(214,164,75,.38);
+
+    --ok:   #7FD6B4;  --ok-soft:   #12241E;
+    --warn: #E0A25F;  --warn-soft: #2A1D12;
+    --risk: #E9A69D;  --risk-soft: #2A1618;
+    --info: #9CC4E8;  --info-soft: #12212E;
+
+    --rank-1: #6F8090;  --rank-1-ink: #F2F0EC;
+    --rank-2: #E8C57E;  --rank-2-ink: #0E1922;
+    --rank-3: #E8873F;  --rank-3-ink: #0E1922;
+    --rank-4: #7FD6B4;  --rank-4-ink: #0E1922;
+    --rank-5: #9CC4E8;  --rank-5-ink: #0E1922;
+    --rank-6: #B7A6DA;  --rank-6-ink: #0E1922;
+    --rank-7: #C0A084;  --rank-7-ink: #0E1922;
+    --rank-8: #8FA0AE;  --rank-8-ink: #0E1922;
+    --rank-9: #D6A44B;  --rank-9-ink: #0E1922;
+
+    --shadow-1: 0 1px 2px rgba(0,0,0,.4);
+    --shadow-2: 0 2px 10px rgba(0,0,0,.45);
+    --shadow-3: 0 14px 36px rgba(0,0,0,.55);
+  }
+}
+:root[data-theme="dark"] {
+  --bg:#0B1319; --surface:#131E26; --surface-2:#18242D;
+  --line:#22323D; --line-firm:#344652;
+  --text:#F2F0EC; --text-2:#C3CBD3; --text-3:#94A2AE; --text-on-accent:#0E1922;
+  --accent:#D6A44B; --accent-text:#E0B96E; --accent-soft:#2B2415;
+  --accent-hover:#E0B96E; --accent-ring:rgba(214,164,75,.38);
+  --ok:#7FD6B4; --ok-soft:#12241E; --warn:#E0A25F; --warn-soft:#2A1D12;
+  --risk:#E9A69D; --risk-soft:#2A1618; --info:#9CC4E8; --info-soft:#12212E;
+  --rank-1:#6F8090; --rank-1-ink:#F2F0EC; --rank-2:#E8C57E; --rank-2-ink:#0E1922;
+  --rank-3:#E8873F; --rank-3-ink:#0E1922; --rank-4:#7FD6B4; --rank-4-ink:#0E1922;
+  --rank-5:#9CC4E8; --rank-5-ink:#0E1922; --rank-6:#B7A6DA; --rank-6-ink:#0E1922;
+  --rank-7:#C0A084; --rank-7-ink:#0E1922; --rank-8:#8FA0AE; --rank-8-ink:#0E1922;
+  --rank-9:#D6A44B; --rank-9-ink:#0E1922;
+  --shadow-1:0 1px 2px rgba(0,0,0,.4);
+  --shadow-2:0 2px 10px rgba(0,0,0,.45);
+  --shadow-3:0 14px 36px rgba(0,0,0,.55);
+}
+
+/* ==========================================================================
+   2. BASE
+   ========================================================================== */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);          /* explicit — a transparent body borrows
+                                     the host's theme and breaks the page */
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: var(--t-base);
+  line-height: var(--lh-body);
+  font-synthesis-weight: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  color: var(--text);
+  letter-spacing: -0.012em;
+  line-height: var(--lh-tight);
+  text-wrap: balance;
+  margin: 0;
+}
+h1 { font-size: var(--t-4xl); }
+h2 { font-size: var(--t-3xl); }
+h3 { font-size: var(--t-2xl); }
+h4 { font-size: var(--t-xl); line-height: var(--lh-snug); }
+
+p { margin: 0; max-width: var(--measure); }
+
+a { color: var(--accent-text); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--text); }
+
+/* Focus. WCAG 2.2 raised the bar on focus appearance — this meets it.
+   Never remove it. :focus-visible keeps it off mouse clicks. */
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: var(--focus-offset);
+  border-radius: var(--r1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ==========================================================================
+   3. TYPOGRAPHIC UTILITIES
+   ========================================================================== */
+
+/* The eyebrow. Used above a section title. Mono, spaced, brass.
+   This is decorative brass on a large-ish label — legal at 3:1. */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--t-xs);
+  font-weight: 500;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--accent-text);
+  margin: 0 0 var(--s3);
+}
+
+.lede { font-size: var(--t-lg); color: var(--text-2); max-width: 58ch; }
+.muted { color: var(--text-2); }
+.small { font-size: var(--t-sm); }
+
+/* The Rank Rule — the brand's structural device. A short brass bar that
+   opens a section. It is the logo's own rule, reused as furniture. */
+.rank-rule { width: 56px; height: 6px; border-radius: 3px; background: var(--accent); }
+
+/* STATUTE REFERENCES ARE ALWAYS MONO.
+   "§ 95-25.8" must look like a citation, not like body text. This is the
+   single highest-return typographic decision in the product. */
+.cite-ref {
+  font-family: var(--font-mono);
+  font-size: .92em;
+  font-weight: 500;
+  color: var(--text-2);
+  white-space: nowrap;
+}
+
+.num { font-variant-numeric: tabular-nums; }
+
+/* ==========================================================================
+   4. LAYOUT
+   ========================================================================== */
+
+.stack   { display: flex; flex-direction: column; gap: var(--s4); }
+.stack-6 { display: flex; flex-direction: column; gap: var(--s6); }
+.row     { display: flex; align-items: center; gap: var(--s3); flex-wrap: wrap; }
+.spread  { display: flex; align-items: center; justify-content: space-between; gap: var(--s4); }
+
+.shell   { max-width: 1180px; margin: 0 auto; padding: var(--s6) var(--s5) var(--s9); }
+.reading { max-width: 720px; margin: 0 auto; padding: var(--s6) var(--s5) var(--s9); }
+
+.grid { display: grid; gap: var(--s4); }
+.grid-2 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.grid-3 { grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
+.grid-4 { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+
+/* Any wide child scrolls inside itself. The page body never scrolls sideways. */
+.scroll-x { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+/* ==========================================================================
+   5. SURFACES
+   ========================================================================== */
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r3);
+  padding: var(--s5);
+  box-shadow: var(--shadow-1);
+}
+.card-flat { box-shadow: none; }
+.card-tight { padding: var(--s4); }
+
+/* Interactive card — must look interactive. */
+a.card, button.card { display: block; text-align: left; width: 100%;
+  text-decoration: none; color: inherit; cursor: pointer;
+  transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease; }
+a.card:hover, button.card:hover {
+  border-color: var(--accent); box-shadow: var(--shadow-2); transform: translateY(-1px); }
+
+.panel { background: var(--surface-2); border: 1px solid var(--line); border-radius: var(--r2); padding: var(--s4); }
+
+.divider { height: 1px; background: var(--line); border: 0; margin: var(--s6) 0; }
+
+.section-head { display: flex; flex-direction: column; gap: var(--s2); margin-bottom: var(--s5); }
+
+/* ==========================================================================
+   6. CONTROLS
+   ========================================================================== */
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--s2);
+  min-height: 40px;                 /* target size — WCAG 2.2 wants >=24 */
+  padding: 0 var(--s5);
+  font-family: var(--font-body); font-size: var(--t-md); font-weight: 600;
+  letter-spacing: .01em; line-height: 1;
+  border-radius: var(--r2); border: 1px solid transparent;
+  cursor: pointer; text-decoration: none; white-space: nowrap;
+  transition: background .15s ease, border-color .15s ease, color .15s ease;
+}
+.btn-primary   { background: var(--accent); color: var(--text-on-accent); }
+.btn-primary:hover { background: var(--accent-hover); }
+.btn-secondary { background: var(--surface); color: var(--text); border-color: var(--line-firm); }
+.btn-secondary:hover { border-color: var(--accent); color: var(--accent-text); }
+.btn-ghost     { background: transparent; color: var(--text-2); }
+.btn-ghost:hover { background: var(--surface-2); color: var(--text); }
+.btn-danger    { background: var(--risk); color: var(--surface); }
+.btn[disabled], .btn[aria-disabled="true"] { opacity: .45; cursor: not-allowed; }
+.btn-sm { min-height: 32px; padding: 0 var(--s3); font-size: var(--t-sm); }
+.btn-block { width: 100%; }
+
+.field { display: flex; flex-direction: column; gap: var(--s2); }
+.label { font-size: var(--t-md); font-weight: 600; color: var(--text); }
+.hint  { font-size: var(--t-sm); color: var(--text-2); }
+
+.input, .select, .textarea {
+  font-family: var(--font-body); font-size: var(--t-base); color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--line-firm); border-radius: var(--r2);
+  padding: 10px var(--s3); min-height: 42px; width: 100%;
+}
+.input::placeholder, .textarea::placeholder { color: var(--text-3); }
+.input:focus, .select:focus, .textarea:focus {
+  outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-ring); }
+.textarea { min-height: 96px; line-height: var(--lh-body); resize: vertical; }
+
+/* An error tells the person what happened and how to fix it. */
+.input[aria-invalid="true"] { border-color: var(--risk); }
+.error-text { font-size: var(--t-sm); color: var(--risk); font-weight: 500; }
+
+/* ==========================================================================
+   7. STATUS
+   ========================================================================== */
+
+.badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: var(--font-mono); font-size: var(--t-xs); font-weight: 500;
+  letter-spacing: .1em; text-transform: uppercase;
+  padding: 4px 9px; border-radius: var(--r1);
+  background: var(--surface-2); color: var(--text-2);
+  border: 1px solid var(--line);
+}
+.badge-ok   { background: var(--ok-soft);   color: var(--ok);   border-color: transparent; }
+.badge-warn { background: var(--warn-soft); color: var(--warn); border-color: transparent; }
+.badge-risk { background: var(--risk-soft); color: var(--risk); border-color: transparent; }
+.badge-info { background: var(--info-soft); color: var(--info); border-color: transparent; }
+.badge-accent { background: var(--accent-soft); color: var(--accent-text); border-color: transparent; }
+
+/* State reads at a glance in FORM as well as colour — the dot is not
+   decoration, it is the redundant encoding that survives colour-blindness. */
+.badge::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; flex: 0 0 6px; }
+.badge-plain::before { display: none; }
+
+/* Callouts */
+.callout { border-left: 3px solid var(--accent); padding: var(--s1) 0 var(--s1) var(--s4); }
+.callout-warn { border-color: var(--warn); }
+.callout-risk { border-color: var(--risk); }
+.callout-ok   { border-color: var(--ok); }
+.callout .callout-title { font-weight: 700; font-size: var(--t-md); color: var(--text); margin-bottom: var(--s1); }
+
+/* ==========================================================================
+   8. DATA
+   ========================================================================== */
+
+.stat { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r2); padding: var(--s4); }
+.stat-value {
+  font-family: var(--font-display); font-size: var(--t-3xl);
+  line-height: 1.05; color: var(--text); font-variant-numeric: tabular-nums; }
+.stat-unit { font-size: var(--t-lg); color: var(--text-2); }
+.stat-label {
+  font-family: var(--font-mono); font-size: var(--t-xs); font-weight: 500;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--text-2); margin-top: var(--s1); }
+.stat-delta { font-size: var(--t-sm); font-weight: 600; margin-top: var(--s2); }
+.stat-delta.up { color: var(--ok); } .stat-delta.down { color: var(--risk); }
+
+.table { border-collapse: collapse; width: 100%; font-size: var(--t-md); }
+.table th {
+  font-family: var(--font-mono); font-size: var(--t-xs); font-weight: 500;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--text-2);
+  text-align: left; padding: var(--s2) var(--s4) var(--s2) 0;
+  border-bottom: 1px solid var(--line-firm); white-space: nowrap; }
+.table td { padding: var(--s3) var(--s4) var(--s3) 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+.table tbody tr:last-child td { border-bottom: 0; }
+.table .num { text-align: right; padding-right: 0; }
+
+.progress { height: 8px; border-radius: var(--r-pill); background: var(--surface-2);
+  border: 1px solid var(--line); overflow: hidden; }
+.progress > i { display: block; height: 100%; background: var(--accent); border-radius: var(--r-pill); }
+
+/* ==========================================================================
+   9. RELI COMPONENTS
+   The parts no generic system provides. These carry the product.
+   ========================================================================== */
+
+/* --- 9.1 The rank chip ------------------------------------------------- */
+.rank-chip {
+  display: inline-flex; align-items: center; gap: var(--s2);
+  padding: 4px 12px 4px 4px; border-radius: var(--r-pill);
+  background: var(--surface-2); border: 1px solid var(--line);
+  font-size: var(--t-md); font-weight: 600; color: var(--text); }
+.rank-chip .pip { width: 20px; height: 20px; border-radius: 50%;
+  background: var(--rank-fill, var(--accent)); border: 1px solid rgba(14,25,34,.18); flex: 0 0 20px; }
+
+/* --- 9.2 The belt ladder rail -----------------------------------------
+   The emotional centre of the product. A member glances at this on a phone
+   and feels the distance to the next rank. Horizontal, scrolls on narrow
+   screens, never wraps — the ladder is a line, and a wrapped line is not
+   a ladder. */
+.ladder { display: flex; align-items: flex-start; gap: 0; min-width: max-content; padding: var(--s2) 0 0; }
+.rung { display: flex; flex-direction: column; align-items: center; gap: var(--s2);
+  position: relative; padding: 0 var(--s3); min-width: 68px; }
+.rung::before {                              /* the connecting line */
+  content: ""; position: absolute; top: 13px; left: 0; right: 50%; height: 2px;
+  background: var(--line-firm); }
+.rung::after {
+  content: ""; position: absolute; top: 13px; left: 50%; right: 0; height: 2px;
+  background: var(--line-firm); }
+.rung:first-child::before, .rung:last-child::after { display: none; }
+.rung.done::before, .rung.done::after, .rung.now::before { background: var(--accent); }
+
+.rung .node {
+  width: 28px; height: 28px; border-radius: 50%; position: relative; z-index: 1;
+  background: var(--surface); border: 2px solid var(--line-firm);
+  display: grid; place-items: center; }
+.rung.done .node { background: var(--rank-fill, var(--accent)); border-color: transparent; }
+.rung.now  .node { width: 38px; height: 38px; margin-top: -5px;
+  background: var(--rank-fill, var(--accent)); border: 3px solid var(--surface);
+  box-shadow: 0 0 0 3px var(--accent), var(--shadow-2); }
+.rung .node svg { width: 13px; height: 13px; }
+
+.rung .name { font-size: var(--t-xs); font-weight: 600; color: var(--text-3);
+  text-align: center; letter-spacing: .01em; }
+.rung.done .name { color: var(--text-2); }
+.rung.now  .name { color: var(--text); }
+
+/* --- 9.3 Lesson blocks -------------------------------------------------
+   The Core returns typed blocks and never markup. This is the only place
+   that decides what a block LOOKS like. */
+.lesson { display: flex; flex-direction: column; gap: var(--s5); max-width: var(--measure); }
+.lb-prose { font-size: var(--t-lg); line-height: var(--lh-body); color: var(--text); }
+.lb-list { margin: 0; padding-left: var(--s5); display: flex; flex-direction: column; gap: var(--s2); }
+.lb-list li::marker { color: var(--accent); }
+
+/* THE TRAP BLOCK — the common mistake. This is the highest-value content
+   in any lesson and it must not read like a note. Oxblood edge, mono
+   label, tinted ground. Deliberately arresting. */
+.lb-trap {
+  background: var(--risk-soft);
+  border-left: 4px solid var(--risk);
+  border-radius: 0 var(--r2) var(--r2) 0;
+  padding: var(--s4) var(--s5); }
+.lb-trap .trap-label {
+  font-family: var(--font-mono); font-size: var(--t-xs); font-weight: 600;
+  letter-spacing: .16em; text-transform: uppercase; color: var(--risk);
+  display: block; margin-bottom: var(--s2); }
+.lb-trap p { color: var(--text); }
+
+/* --- 9.4 The citation strip -------------------------------------------
+   The verified-on date is shown TO THE LEARNER, not kept as internal
+   metadata. It is the product promise made visible: this was checked, on
+   this day, by a person. It is the whole moat, rendered. */
+.sources { border-top: 2px solid var(--accent); padding-top: var(--s4); margin-top: var(--s2); }
+.sources h4 {
+  font-family: var(--font-mono); font-size: var(--t-xs); font-weight: 500;
+  letter-spacing: .16em; text-transform: uppercase; color: var(--text-2); margin-bottom: var(--s3); }
+.source { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s2) var(--s3);
+  padding: var(--s2) 0; border-bottom: 1px solid var(--line); font-size: var(--t-md); }
+.source:last-child { border-bottom: 0; }
+.source .src-name { color: var(--text); flex: 1 1 200px; }
+.verified {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-family: var(--font-mono); font-size: var(--t-xs); letter-spacing: .06em;
+  color: var(--ok); background: var(--ok-soft); padding: 3px 8px; border-radius: var(--r1); }
+.verified.stale { color: var(--warn); background: var(--warn-soft); }
+
+/* --- 9.5 Assessment result --------------------------------------------
+   Never show a score without showing what was missed. A right/wrong quiz
+   teaches guessing; this teaches judgement. */
+.result { border: 1px solid var(--line); border-radius: var(--r3); overflow: hidden; background: var(--surface); }
+.result-head { padding: var(--s4) var(--s5); background: var(--surface-2); border-bottom: 1px solid var(--line);
+  display: flex; align-items: baseline; justify-content: space-between; gap: var(--s4); flex-wrap: wrap; }
+.result-score { font-family: var(--font-display); font-size: var(--t-2xl); color: var(--text); }
+.result-score b { color: var(--accent-text); font-weight: 500; }
+.elements { list-style: none; margin: 0; padding: 0; }
+.element { display: flex; gap: var(--s3); padding: var(--s4) var(--s5); border-bottom: 1px solid var(--line); }
+.element:last-child { border-bottom: 0; }
+.element .mark { flex: 0 0 20px; width: 20px; height: 20px; border-radius: 50%;
+  display: grid; place-items: center; margin-top: 1px; }
+.element.got .mark  { background: var(--ok-soft);   color: var(--ok); }
+.element.miss .mark { background: var(--risk-soft); color: var(--risk); }
+.element .mark svg { width: 11px; height: 11px; }
+.element .body { flex: 1; }
+.element.miss .body { color: var(--text); }
+.element.got  .body { color: var(--text-2); }
+.element .cite-ref { display: block; margin-top: var(--s1); }
+
+/* --- 9.6 The publish gate ----------------------------------------------
+   draft -> SME review -> LEGAL REVIEW -> published. Nothing skips it.
+   The lock on step three is the software enforcement of the UPL boundary
+   and it is the most important pixel in the Console. */
+.gate { display: flex; align-items: stretch; gap: 0; min-width: max-content; }
+.gate-step { display: flex; flex-direction: column; gap: 6px; padding: var(--s3) var(--s5) var(--s3) var(--s4);
+  border-top: 3px solid var(--line-firm); min-width: 148px; position: relative; }
+.gate-step .gs-name { font-size: var(--t-md); font-weight: 600; color: var(--text-3); }
+.gate-step .gs-meta { font-family: var(--font-mono); font-size: var(--t-xs); color: var(--text-3); }
+.gate-step.done { border-top-color: var(--ok); }
+.gate-step.done .gs-name { color: var(--text-2); }
+.gate-step.active { border-top-color: var(--warn); }
+.gate-step.active .gs-name { color: var(--text); }
+.gate-step.locked { border-top-color: var(--line-firm); }
+.gate-step .gs-lock { display: inline-flex; align-items: center; gap: 5px;
+  font-family: var(--font-mono); font-size: var(--t-xs); letter-spacing: .1em;
+  text-transform: uppercase; color: var(--risk); font-weight: 600; }
+
+/* --- 9.7 The credential ------------------------------------------------
+   The public verify page is the most-shared URL this product will ever
+   have. It gets its own design attention. */
+.credential { background: var(--surface); border: 1px solid var(--line-firm); border-radius: var(--r3);
+  padding: var(--s6) var(--s5); text-align: center; box-shadow: var(--shadow-2); position: relative; overflow: hidden; }
+.credential::before { content: ""; position: absolute; inset: 0 0 auto; height: 6px; background: var(--accent); }
+.credential .cred-holder { font-family: var(--font-display); font-size: var(--t-3xl); color: var(--text); margin: var(--s4) 0 var(--s1); }
+.credential .cred-what { color: var(--text-2); }
+.credential .cred-ref { font-family: var(--font-mono); font-size: var(--t-sm); letter-spacing: .08em;
+  color: var(--text-2); margin-top: var(--s5); padding-top: var(--s4); border-top: 1px solid var(--line); }
+
+/* --- 9.8 Door badge — which building you are in ------------------------ */
+.door { display: inline-flex; align-items: center; gap: var(--s2);
+  font-family: var(--font-mono); font-size: var(--t-xs); font-weight: 500;
+  letter-spacing: .14em; text-transform: uppercase;
+  padding: 5px 10px; border-radius: var(--r1);
+  background: var(--accent-soft); color: var(--accent-text); }
+
+/* --- 9.9 Empty state --------------------------------------------------- */
+.empty { text-align: center; padding: var(--s8) var(--s5); border: 1px dashed var(--line-firm);
+  border-radius: var(--r3); color: var(--text-2); }
+.empty h4 { color: var(--text); margin-bottom: var(--s2); }
+
+/* ==========================================================================
+   10. ACCESSIBILITY HELPERS
+   ========================================================================== */
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+.skip-link { position: absolute; left: var(--s4); top: -60px; z-index: 99;
+  background: var(--accent); color: var(--text-on-accent); padding: var(--s3) var(--s4);
+  border-radius: var(--r2); font-weight: 600; transition: top .15s ease; }
+.skip-link:focus { top: var(--s4); }
+
+/* Every page carries this. It is not a footnote, it is a licence condition. */
+.upl-notice { font-size: var(--t-sm); color: var(--text-2); border-top: 1px solid var(--line);
+  padding-top: var(--s4); margin-top: var(--s6); }
