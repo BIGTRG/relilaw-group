@@ -1,0 +1,35 @@
+{
+  "name": "reli-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Robinson Employment Law Institute — the RELI application. Consumer #1 of the Learning Core.",
+  "scripts": {
+    "dev": "next dev -p 3200",
+    "build": "next build",
+    "start": "next start -p 3200",
+    "migrate": "node db/migrate.mjs",
+    "test": "node --test test/*.test.mjs",
+    "test:grep": "node test/grep_ci.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@simplewebauthn/server": "^13.3.2",
+    "argon2": "^0.45.1",
+    "ioredis": "^6.0.0",
+    "next": "^16.3.2",
+    "otplib": "^13.5.0",
+    "pg": "^8.23.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "stripe": "^22.5.0",
+    "ulid": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "@types/react": "^19.2.18",
+    "embedded-postgres": "^18.4.0-beta.17",
+    "typescript": "^7.0.2"
+  }
+}
