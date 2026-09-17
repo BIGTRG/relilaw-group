@@ -17,11 +17,11 @@ export function createLearningService({ db, core }) {
   // ---- identity -----------------------------------------------------------
 
   /** Ensure the user exists in the Core; return the Core learner id. */
-  async function ensureLearner(user) {
-    const { rows } = await db.query('select core_learner_id from learner_link where user_id = $1', [user.id]);
+  async function ensureLearner(user, conn = db) {
+    const { rows } = await conn.query('select core_learner_id from learner_link where user_id = $1', [user.id]);
     if (rows[0]) return rows[0].core_learner_id;
     const learner = await core.upsertLearner({ externalRef: user.external_ref, displayName: user.display_name });
-    await db.query(
+    await conn.query(
       `insert into learner_link (user_id, core_learner_id) values ($1, $2)
        on conflict (user_id) do nothing`, [user.id, learner.id]);
     return learner.id;
@@ -48,8 +48,8 @@ export function createLearningService({ db, core }) {
     return out;
   }
 
-  async function productForCourse(courseId) {
-    const { rows } = await db.query('select * from product where core_course_id = $1 and active', [courseId]);
+  async function productForCourse(courseId, conn = db) {
+    const { rows } = await conn.query('select * from product where core_course_id = $1 and active', [courseId]);
     return rows[0] ?? null;
   }
 
@@ -68,17 +68,19 @@ export function createLearningService({ db, core }) {
 
   // ---- enrollment & progress ---------------------------------------------
 
-  /** Enrol if entitled. Idempotent. Returns the enrollment link or throws NotEntitled. */
-  async function ensureEnrollment(user, courseId) {
-    const product = await productForCourse(courseId);
+  /** Enrol if entitled. Idempotent. Returns the enrollment link or throws NotEntitled.
+   *  `conn` lets a caller inside a transaction (the payments webhook) enrol
+   *  against the grant it has just written but not yet committed. */
+  async function ensureEnrollment(user, courseId, conn = db) {
+    const product = await productForCourse(courseId, conn);
     if (!product) throw new NotEntitledError('unknown course');
-    if (!(await hasEntitlement(db, user.id, entitlementKeyFor(product.code)))) throw new NotEntitledError(product.code);
-    const { rows } = await db.query(
+    if (!(await hasEntitlement(conn, user.id, entitlementKeyFor(product.code)))) throw new NotEntitledError(product.code);
+    const { rows } = await conn.query(
       'select core_enrollment_id from enrollment_link where user_id = $1 and core_course_id = $2', [user.id, courseId]);
     if (rows[0]) return rows[0].core_enrollment_id;
-    const learnerId = await ensureLearner(user);
+    const learnerId = await ensureLearner(user, conn);
     const enrollment = await core.enroll({ learnerId, courseId });
-    await db.query(
+    await conn.query(
       `insert into enrollment_link (user_id, core_course_id, core_enrollment_id) values ($1, $2, $3)
        on conflict (user_id, core_course_id) do nothing`, [user.id, courseId, enrollment.id]);
     return enrollment.id;

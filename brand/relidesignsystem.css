@@ -402,6 +402,7 @@ a.card:hover, button.card:hover {
 .callout-warn { border-color: var(--warn); }
 .callout-risk { border-color: var(--risk); }
 .callout-ok   { border-color: var(--ok); }
+.callout-info { border-color: var(--info); }
 .callout .callout-title { font-weight: 700; font-size: var(--t-md); color: var(--text); margin-bottom: var(--s1); }
 
 /* ==========================================================================
