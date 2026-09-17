@@ -1,0 +1,10 @@
+/* Public verify page. Tokens only. */
+.verify-head h1 { margin-top: var(--s2); }
+.verify-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: var(--s4); margin: 0; }
+.verify-facts div { border-top: 1px solid var(--line); padding-top: var(--s3); }
+.verify-facts dt { font-family: var(--font-mono); font-size: var(--t-xs); letter-spacing: .13em; text-transform: uppercase; color: var(--text-2); }
+.verify-facts dd { margin: var(--s1) 0 0; color: var(--text); }
+.revoked-card { background: var(--surface); border: 1px solid var(--risk); border-radius: var(--r3); padding: var(--s6) var(--s5); box-shadow: var(--shadow-2); position: relative; overflow: hidden; }
+.revoked-card::before { content: ""; position: absolute; inset: 0 0 auto; height: 6px; background: var(--risk); }
+.revoked-card h2 { font-family: var(--font-mono); letter-spacing: .08em; font-size: var(--t-xl); margin: var(--s3) 0 var(--s2); }
+.verify .pip { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--rank-fill, var(--accent)); vertical-align: middle; margin-right: 6px; }

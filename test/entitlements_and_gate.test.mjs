@@ -75,6 +75,13 @@ test('GATE: the application role cannot write publish_signoff by any SQL', async
 });
 
 test('GATE: the legal role signs off in one recorded action; sign-off is immutable', async () => {
+  // Migration 003: a sign-off must point at a version that is in legal review.
+  const { rows: vr } = await appPool.query(
+    `insert into content_version (core_course_ref, core_version_ref, created_by) values ('NC-ORG-001', 'v1', $1) returning id`, [legalUserId]);
+  for (const [from, to] of [['draft', 'sme_review'], ['sme_review', 'legal_review']]) {
+    await appPool.query(`insert into pipeline_transition (version_id, from_state, to_state, actor_user_id, actor_role) values ($1, $2, $3, $4, 'legal')`, [vr[0].id, from, to, legalUserId]);
+    await appPool.query(`update content_version set state = $2 where id = $1`, [vr[0].id, to]);
+  }
   const { rows } = await legalPool.query(
     `insert into publish_signoff (core_course_ref, core_version_ref, reviewer_user_id, note)
      values ('NC-ORG-001', 'v1', $1, 'reviewed 8 items') returning id, signed_at`, [legalUserId]);

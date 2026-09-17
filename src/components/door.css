@@ -1,0 +1,51 @@
+/* Studio + Console layout rules. Tokens only; no colour is defined here. */
+.door-bar { border-bottom: 1px solid var(--line); background: var(--surface); }
+.door-bar-inner { max-width: 1100px; margin: 0 auto; padding: var(--s3) var(--s5); display: flex; align-items: center; justify-content: space-between; gap: var(--s4); flex-wrap: wrap; }
+.door-brand { display: inline-flex; align-items: center; gap: var(--s2); font-family: var(--font-display); font-size: var(--t-lg); color: var(--text); text-decoration: none; letter-spacing: .02em; }
+.door-brand-mark { width: 10px; height: 22px; background: var(--accent); border-radius: 2px; display: inline-block; }
+.door-links { display: flex; align-items: center; gap: var(--s4); flex-wrap: wrap; }
+.door-links a { color: var(--text-2); text-decoration: none; font-size: var(--t-md); padding: var(--s1) 0; min-height: 24px; display: inline-flex; align-items: center; }
+.door-links a:hover, .door-links a[aria-current="page"] { color: var(--text); }
+.door-links a[aria-current="page"] { box-shadow: inset 0 -2px 0 var(--accent); }
+.door-who { font-family: var(--font-mono); font-size: var(--t-xs); color: var(--text-2); letter-spacing: .06em; }
+.wide { max-width: 1100px; margin: 0 auto; padding: var(--s6) var(--s5) var(--s8); }
+
+.board { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--s4); }
+@media (max-width: 900px) { .board { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .board { grid-template-columns: 1fr; } }
+.board-col { background: var(--surface-2); border: 1px solid var(--line); border-radius: var(--r2); padding: var(--s3); min-height: 160px; }
+.board-col > h3 { font-family: var(--font-mono); font-size: var(--t-xs); letter-spacing: .13em; text-transform: uppercase; color: var(--text-2); font-weight: 500; margin: 0 0 var(--s3); display: flex; justify-content: space-between; }
+.board-col.is-gate > h3 { color: var(--risk); }
+.board-card { display: block; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r2); padding: var(--s3); text-decoration: none; color: var(--text); margin-bottom: var(--s2); }
+.board-card:hover { border-color: var(--line-firm); }
+.board-card .bc-ref { font-family: var(--font-mono); font-size: var(--t-sm); letter-spacing: .06em; color: var(--text); }
+.board-card .bc-title { font-size: var(--t-md); color: var(--text-2); margin-top: var(--s1); }
+.board-card .bc-meta { font-family: var(--font-mono); font-size: var(--t-xs); color: var(--text-2); margin-top: var(--s2); display: flex; gap: var(--s3); flex-wrap: wrap; }
+
+.review-list { list-style: none; margin: 0; padding: 0; }
+.review-item { display: flex; gap: var(--s3); align-items: flex-start; padding: var(--s3) 0; border-bottom: 1px solid var(--line); }
+.review-item:last-child { border-bottom: 0; }
+.review-item .ri-mark { flex: 0 0 20px; width: 20px; height: 20px; border-radius: 50%; border: 1.5px solid var(--line-firm); display: inline-flex; align-items: center; justify-content: center; margin-top: 2px; }
+.review-item.open .ri-mark { border-color: var(--warn); background: var(--warn-soft); }
+.review-item.resolved .ri-mark { border-color: transparent; background: var(--ok-soft); color: var(--ok); }
+.review-item.resolved .ri-mark svg { width: 11px; height: 11px; }
+.review-item .ri-body { flex: 1; }
+.review-item .ri-title { color: var(--text); font-weight: 600; font-size: var(--t-md); }
+.review-item .ri-detail { color: var(--text-2); font-size: var(--t-sm); margin-top: 2px; }
+.review-item .ri-meta { font-family: var(--font-mono); font-size: var(--t-xs); color: var(--text-2); margin-top: var(--s1); }
+
+.actions-row { display: flex; gap: var(--s3); flex-wrap: wrap; align-items: flex-start; }
+.refusal { font-size: var(--t-sm); color: var(--risk); font-weight: 600; }
+.log { font-size: var(--t-md); }
+.log time { font-family: var(--font-mono); font-size: var(--t-xs); color: var(--text-2); }
+.signature { display: flex; gap: var(--s4); align-items: center; padding: var(--s4); border: 1px solid var(--ok); border-radius: var(--r2); background: var(--ok-soft); color: var(--text); }
+.signature .sig-name { font-family: var(--font-display); font-size: var(--t-xl); }
+.signature .sig-date { font-family: var(--font-mono); font-size: var(--t-sm); color: var(--text-2); }
+
+.stat-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: var(--s3); }
+.filter-form { display: flex; gap: var(--s2); align-items: flex-end; flex-wrap: wrap; }
+.filter-form .field { margin: 0; min-width: 240px; }
+.inline-form { display: inline-flex; gap: var(--s2); align-items: center; flex-wrap: wrap; }
+.inline-form .input { width: 110px; }
+.notice { border-left: 3px solid var(--info); padding: var(--s2) var(--s4); background: var(--info-soft); color: var(--text); border-radius: 0 var(--r1) var(--r1) 0; }
+.pip { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--rank-fill, var(--accent)); vertical-align: middle; margin-right: 6px; }

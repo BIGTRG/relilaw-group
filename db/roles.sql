@@ -41,8 +41,14 @@ grant select, insert, update on
   role_grant, stripe_customer, stripe_event, entitlement, review_item, email_log,
   org, seat, org_group, org_group_member, assignment_rule,
   jurisdiction, law_item, law_citation, change_event,
-  product, learner_link, enrollment_link, attempt_link, credential_link
+  product, learner_link, enrollment_link, attempt_link, credential_link,
+  content_version
 to reli_app;
+
+-- …the pipeline transition log is append-only, like audit_event: INSERT yes,
+-- UPDATE/DELETE never, for every role (migration 003 also freezes a published
+-- content_version by trigger).
+grant select, insert on pipeline_transition to reli_app;
 grant delete on passkey_credential, recovery_code, org_group_member to reli_app;
 
 -- …audit_event is append-only: INSERT yes, UPDATE/DELETE never.
@@ -73,6 +79,17 @@ begin
   if has_table_privilege('reli_app', 'audit_event', 'update')
      or has_table_privilege('reli_app', 'audit_event', 'delete') then
     raise exception 'GATE FAILURE: audit_event is not append-only for reli_app';
+  end if;
+  -- the pipeline log must be append-only for every application role
+  if has_table_privilege('reli_app', 'pipeline_transition', 'update')
+     or has_table_privilege('reli_app', 'pipeline_transition', 'delete')
+     or has_table_privilege('reli_legal', 'pipeline_transition', 'update')
+     or has_table_privilege('reli_legal', 'pipeline_transition', 'delete') then
+    raise exception 'GATE FAILURE: pipeline_transition is not append-only';
+  end if;
+  -- nobody deletes a content version through the app
+  if has_table_privilege('reli_app', 'content_version', 'delete') then
+    raise exception 'GATE FAILURE: reli_app can delete content_version';
   end if;
   -- auditor must not write anywhere
   select count(*) into bad
