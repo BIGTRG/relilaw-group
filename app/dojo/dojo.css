@@ -1,0 +1,27 @@
+/* Dojo-only layout rules. Tokens from the design system only; no new colours. */
+.topbar { border-bottom: 1px solid var(--line); background: var(--surface); }
+.topbar-inner { max-width: 720px; margin: 0 auto; padding: var(--s3) var(--s5); display: flex; align-items: center; justify-content: space-between; gap: var(--s4); }
+.brand { display: inline-flex; align-items: center; gap: var(--s2); font-family: var(--font-display); font-size: var(--t-lg); color: var(--text); text-decoration: none; letter-spacing: .02em; }
+.brand-mark { width: 10px; height: 22px; background: var(--accent); border-radius: 2px; display: inline-block; }
+.topbar-links { display: flex; align-items: center; gap: var(--s4); }
+.topbar-links a { color: var(--text-2); text-decoration: none; font-size: var(--t-md); }
+.topbar-links a:hover { color: var(--text); }
+.syllabus { list-style: none; margin: 0; padding: 0; }
+.syllabus-module { margin-top: var(--s5); }
+.syllabus-module h3 { margin: 0 0 var(--s2); font-size: var(--t-md); color: var(--text-2); font-weight: 600; }
+.syllabus-lesson { display: flex; align-items: center; gap: var(--s3); padding: var(--s3) 0; border-bottom: 1px solid var(--line); }
+.syllabus-lesson:last-child { border-bottom: 0; }
+.syllabus-lesson .tick { flex: 0 0 20px; width: 20px; height: 20px; border-radius: 50%; border: 1.5px solid var(--line-firm); display: inline-flex; align-items: center; justify-content: center; }
+.syllabus-lesson.done .tick { background: var(--ok-soft); border-color: transparent; color: var(--ok); }
+.syllabus-lesson.done .tick svg { width: 11px; height: 11px; }
+.syllabus-lesson a { color: var(--text); text-decoration: none; flex: 1; }
+.syllabus-lesson a:hover { color: var(--accent-text); }
+.syllabus-lesson .mins { font-family: var(--font-mono); font-size: var(--t-xs); color: var(--text-3); }
+.lesson-nav { display: flex; justify-content: space-between; gap: var(--s3); align-items: center; margin-top: var(--s6); padding-top: var(--s5); border-top: 1px solid var(--line); flex-wrap: wrap; }
+.item { padding: var(--s5) 0; border-bottom: 1px solid var(--line); }
+.item:last-child { border-bottom: 0; }
+.item legend { font-size: var(--t-lg); color: var(--text); margin-bottom: var(--s3); }
+.option { display: flex; gap: var(--s3); align-items: flex-start; padding: var(--s2) 0; }
+.option input { margin-top: 5px; accent-color: var(--accent); }
+.form-error { color: var(--risk); font-size: var(--t-sm); }
+.card-row { display: flex; justify-content: space-between; gap: var(--s4); align-items: center; flex-wrap: wrap; }

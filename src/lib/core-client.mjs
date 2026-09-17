@@ -33,6 +33,14 @@ export class CoreRequestError extends Error {
   }
 }
 
+/** Join base + path so a base WITH a path prefix (the GE API Engine mounts the
+ *  Core at /v1/learningcore/) is preserved. `new URL('/v1/x', base)` would
+ *  drop the prefix. */
+export function joinUrl(baseUrl, path) {
+  const base = baseUrl.endsWith('/') ? baseUrl : baseUrl + '/';
+  return new URL(path.replace(/^\/+/, ''), base);
+}
+
 /** Mint the permanent opaque learner identifier. Never an email. Never reused. */
 export function mintExternalRef() {
   return `reli_${ulid()}`;
@@ -74,7 +82,7 @@ export function createCoreClient({
         if (body !== undefined) headers['content-type'] = 'application/json';
         if (!isRead) headers['idempotency-key'] = idempotencyKey ?? randomUUID();
 
-        const res = await fetchImpl(new URL(path, baseUrl), {
+        const res = await fetchImpl(joinUrl(baseUrl, path), {
           method, headers, signal: ac.signal,
           body: body === undefined ? undefined : JSON.stringify(body),
         });
@@ -109,6 +117,10 @@ export function createCoreClient({
     // catalogue & content
     listCourses: () => request('GET', '/v1/courses'),
     getCourse: id => request('GET', `/v1/courses/${id}`),
+    getLesson: id => request('GET', `/v1/lessons/${id}`),
+    listSchemes: () => request('GET', '/v1/schemes'),
+    getAssessment: id => request('GET', `/v1/assessments/${id}`),
+    getAttempt: id => request('GET', `/v1/attempts/${id}`),
     staleContent: (days = 180) => request('GET', `/v1/content/stale?days=${days}`),
     // enrolment & progress
     enroll: ({ learnerId, courseId }) =>
@@ -122,6 +134,8 @@ export function createCoreClient({
     // assessment
     startAttempt: ({ enrollmentId, assessmentId }) =>
       request('POST', '/v1/attempts', { body: { enrollment_id: enrollmentId, assessment_id: assessmentId } }),
+    answerAttempt: ({ attemptId, answers }) =>
+      request('POST', `/v1/attempts/${attemptId}/answers`, { body: { answers } }),
     submitAttempt: id => request('POST', `/v1/attempts/${id}/submit`),
     // credentials
     issueCredential: attemptId =>

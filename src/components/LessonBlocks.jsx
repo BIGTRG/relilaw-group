@@ -18,15 +18,30 @@ export function LessonBlock({ block }) {
   }
 }
 
+const STALE_DAYS = 180;
+
+/** Map a Core citation row to the display shape. Stale = older than 180 days or never verified. */
+export function citationView(c, now = Date.now()) {
+  const verifiedOn = c.verified_on ? String(c.verified_on).slice(0, 10) : null;
+  const ageDays = verifiedOn ? Math.floor((now - Date.parse(verifiedOn)) / 86400000) : null;
+  return {
+    name: c.authority, ref: c.ref ?? '', url: c.url ?? null,
+    verifiedOn, stale: ageDays === null || ageDays > STALE_DAYS, reviewer: c.reviewer ?? null,
+  };
+}
+
 export function Sources({ citations }) {
   return (
     <section className="sources" aria-label="Sources">
       <h4>Sources — checked by a person</h4>
       {citations.map((c, i) => (
         <div className="source" key={i}>
-          <span className="src-name">{c.name} <span className="cite-ref">{c.ref}</span></span>
+          <span className="src-name">
+            {c.url ? <a href={c.url} rel="noopener noreferrer">{c.name}</a> : c.name}
+            {c.ref && <> <span className="cite-ref">{c.ref}</span></>}
+          </span>
           <span className={`verified${c.stale ? ' stale' : ''}`}>
-            verified {c.verifiedOn}{c.reviewer ? ` · ${c.reviewer}` : ''}
+            {c.verifiedOn ? `verified ${c.verifiedOn}` : 'verification pending'}{c.reviewer ? ` · ${c.reviewer}` : ''}{c.stale && c.verifiedOn ? ' · due for re-check' : ''}
           </span>
         </div>
       ))}

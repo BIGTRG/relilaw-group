@@ -40,7 +40,8 @@ grant select, insert, update on
   app_user, password_credential, passkey_credential, totp_secret, recovery_code,
   role_grant, stripe_customer, stripe_event, entitlement, review_item, email_log,
   org, seat, org_group, org_group_member, assignment_rule,
-  jurisdiction, law_item, law_citation, change_event
+  jurisdiction, law_item, law_citation, change_event,
+  product, learner_link, enrollment_link, attempt_link, credential_link
 to reli_app;
 grant delete on passkey_credential, recovery_code, org_group_member to reli_app;
 
