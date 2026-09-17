@@ -1,0 +1,34 @@
+{
+  "module": 1,
+  "position": 4,
+  "title": "New-hire reporting, the hire notice and required postings",
+  "summary": "The 20-day report to the State Directory of New Hires, the written wage notice at hiring, and the posters North Carolina requires on the wall.",
+  "est_minutes": 8,
+  "blocks": [
+    { "type": "prose", "text": "Three onboarding duties fall on every North Carolina employer in the first weeks of a hire. First, the employer must report the hire to the State Directory of New Hires within 20 days of the date of hire (or, for employers transmitting electronically twice a month, in transmissions 12 to 16 days apart). The report covers every employee for whom a federal W-4 is required, and it must include the employee's name, address and social security number, the first day of paid work, and the employer's name, address, federal identification number and state employer identification number." },
+    { "type": "prose", "text": "Second, the Wage and Hour Act requires the employer to notify each employee in writing, at the time of hiring, of the promised wages and the day and place for payment, and to make its wage practices and policies available in writing or by a posted notice. Third, the employer must display the required posters: the Wage and Hour Act poster that summarizes the Act and carries the misclassification notice, the general notice of labor laws for employers of five or more employees, and the workers' compensation notice for employers subject to Chapter 97." },
+    { "type": "table", "head": ["Duty", "Deadline or trigger", "Source"], "rows": [
+      ["Report the hire to the State Directory of New Hires", "Within 20 days of hire (or twice-monthly electronic batches 12 to 16 days apart)", "G.S. 110-129.2(b)"],
+      ["Written notice of promised wages, payday and place of payment", "At the time of hiring", "G.S. 95-25.13(1)"],
+      ["Written notice of any change to promised wages", "At least one pay period before the change", "G.S. 95-25.13(3)"],
+      ["Itemized statement of deductions", "Each pay period in which a deduction under G.S. 95-25.8 is made", "G.S. 95-25.13(4)"],
+      ["Wage and Hour Act poster with misclassification notice", "Every establishment subject to the Act", "G.S. 95-25.15(c)"],
+      ["General notice of labor laws", "Employers with five or more employees", "G.S. 95-9"],
+      ["Workers' compensation notice (insured or self-insured)", "Employers subject to Chapter 97", "G.S. 97-93(e)"]
+    ] },
+    { "type": "list", "items": [
+      "Failure to report a new hire carries a civil penalty of up to $25, rising to up to $500 where the court finds a conspiracy between employer and employee not to report (G.S. 110-129.2(d)).",
+      "Within two business days of entering the report the Department transmits any child support withholding notice to the employer (G.S. 110-129.2(f)); the payroll process must be ready to act on it.",
+      "The Wage and Hour Act poster must state in plain language that a worker who meets the statutory definitions of employee is treated as an employee unless the individual is an independent contractor, and how to report suspected misclassification to the Industrial Commission's Employee Classification Section (G.S. 95-25.15(c))."
+    ] },
+    { "type": "trap", "text": "The common mistake is filing the new-hire report from the payroll system's first pay run. Payroll often runs after the 20th day from the date of hire, particularly for semi-monthly or monthly paydays, so the report is late for every hire. Report from the offer acceptance or first-day workflow, not from payroll." },
+    { "type": "prose", "text": "This is training, not legal advice." }
+  ],
+  "citations": [
+    { "authority": "N.C. Gen. Stat. § 110-129.2 (State Directory of New Hires; employers required to report; penalties)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_110/GS_110-129.2.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-25.13 (notification, posting, and records)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.13.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-25.15(c) (poster summarizing the Act; misclassification notice)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.15.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-9 (employers of five or more to post notice of laws), as amended by S.L. 2025-28", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-9.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 97-93(e) (workers' compensation posting)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_97/GS_97-93.html", "verified_on": "2026-09-17" }
+  ]
+}

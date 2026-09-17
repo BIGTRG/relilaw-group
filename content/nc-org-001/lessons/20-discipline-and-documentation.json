@@ -1,0 +1,35 @@
+{
+  "module": 6,
+  "position": 20,
+  "title": "Discipline and documentation inside the at-will boundary",
+  "summary": "How consistent, contemporaneous discipline protects a termination decision under REDA, the jury and school leave statutes and the unemployment misconduct rules.",
+  "est_minutes": 8,
+  "blocks": [
+    { "type": "prose", "text": "At-will employment means an employer does not need a reason to end employment. It does not mean the reason will never be examined. Every North Carolina statute that limits discharge, and every federal anti-discrimination statute that applies above its threshold, turns on the same question: was the real reason a lawful one? The employer answers that question with its records, and records made at the time carry weight that records made after a complaint do not." },
+    { "type": "prose", "text": "Three state statutes define what a good record looks like. REDA's same-decision defense requires proof by the greater weight of the evidence that the employer would have taken the same action absent the protected activity. The unemployment misconduct statute treats violation of a written absenteeism policy, and refusal or failure to perform assigned work evidenced by no fewer than three written reprimands in the prior 12 months, as prima facie misconduct. And the jury duty and school leave statutes put the burden of proof on the employee but make discharge or demotion for the protected reason actionable, so a record showing the actual reason is the defense." },
+    { "type": "table", "head": ["Practice", "Statutory reason"], "rows": [
+      ["Written policies for attendance, conduct and performance, acknowledged by the employee", "Written policy violations are prima facie misconduct for unemployment purposes (G.S. 96-14.6(c)(1), (10))"],
+      ["Written reprimands dated and delivered when the event occurs", "Three written reprimands in 12 months support the misconduct finding (G.S. 96-14.6(c)(11)); contemporaneous records carry the same-decision defense (G.S. 95-241(b))"],
+      ["Same rule applied the same way to comparable employees", "Inconsistency is the evidence of pretext in any retaliation or discrimination claim"],
+      ["Decision memo stating the rule, the facts and the decision before the termination meeting", "Documents the reason before any later complaint can be alleged as the cause"],
+      ["Review of protected activity in the prior 180 days before finalizing", "REDA complaints may be filed within 180 days of the adverse action (G.S. 95-242(a))"]
+    ] },
+    { "type": "list", "items": [
+      "A discharge that is lawful under at-will can still be a REDA violation if the employee recently filed a wage, safety or workers' compensation complaint; check the timeline before acting (G.S. 95-241).",
+      "Discipline for absence caused by jury service or school involvement leave is prohibited outright (G.S. 9-32, 95-28.3(b)).",
+      "Discipline for lawful off-duty use of lawful products is prohibited for employers of three or more unless an exception applies (G.S. 95-28.2).",
+      "Pay may never be docked as discipline outside the deduction rules in G.S. 95-25.8; a fine deducted from wages without a compliant authorization is an unpaid wage."
+    ] },
+    { "type": "trap", "text": "The common mistake is writing up two years of verbal warnings on the day of termination, dated as if contemporaneous. Under REDA the same-decision defense is proven or lost on when the documentation was made; a file created after the protected activity proves the opposite of what it was written to prove, and the metadata on the document will show the date." },
+    { "type": "prose", "text": "This is training, not legal advice." }
+  ],
+  "citations": [
+    { "authority": "N.C. Gen. Stat. § 95-241 (REDA: discrimination prohibited; same-decision defense)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-241.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-242(a) (REDA complaint within 180 days)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-242.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 96-14.6 (disqualification for misconduct; prima facie examples)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_96/GS_96-14.6.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 9-32 (discharge of juror unlawful)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_9/GS_9-32.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-28.3(b), (c) (no adverse action for school involvement leave)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-28.3.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-28.2 (lawful use of lawful products)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-28.2.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-25.8 (withholding of wages)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.8.html", "verified_on": "2026-09-17" }
+  ]
+}

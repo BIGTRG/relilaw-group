@@ -1,0 +1,36 @@
+{
+  "module": 5,
+  "position": 18,
+  "title": "Unemployment insurance: contributions, separations and the 10-day response",
+  "summary": "Who is a liable employer under Chapter 96, how the contribution rate works, the poster, and what happens when a former employee files a claim.",
+  "est_minutes": 9,
+  "blocks": [
+    { "type": "prose", "text": "North Carolina's Employment Security Law defines a liable employer by reference to the Federal Unemployment Tax Act (section 3306 of the Internal Revenue Code), plus governmental units, nonprofits and Indian tribes required to provide coverage under section 3309. A liable employer contributes to the Unemployment Insurance Fund a percentage of taxable wages paid for services performed in this State, and may not deduct any part of the contribution from employees' pay. A beginning employer pays 1% until its account has been chargeable with benefits for at least 12 calendar months; after that the rate is experience-rated between 0.06% and 5.76%, and the Division of Employment Security notifies the employer of its rate by January 1 each year." },
+    { "type": "prose", "text": "When a former employee files a claim and names the employer as the last employer, the Division sends a Request for Separation Information. The employer has 10 days from the date the claim was filed to respond, through the NCSUITS portal or the SIDES exchange, stating the reason for separation, the dates of employment and any money paid after separation. Employers covered by Chapter 96 post the Division's Certificate of Coverage and Notice to Workers as to Benefit Rights where all employees can see it." },
+    { "type": "table", "head": ["Topic", "Rule", "Source"], "rows": [
+      ["Liable employer", "Employer under IRC § 3306, or governmental, nonprofit or tribal employer under § 3309", "G.S. 96-1(b)(11)"],
+      ["Contributions", "Employer-paid percentage of taxable wages; no deduction from employee remuneration", "G.S. 96-9.2(a)"],
+      ["Beginning employer rate", "1% until chargeable 12 months", "G.S. 96-9.2(b)"],
+      ["Experience-rated range", "0.06% minimum to 5.76% maximum", "G.S. 96-9.2(c)"],
+      ["Rate notice and review", "Notified by January 1; may apply for review before May 1", "G.S. 96-9.2(d)"],
+      ["Response to a claim", "10 days from the claim filing date to respond to the Request for Separation Information", "N.C. DES, Responding to Unemployment Claims"],
+      ["Poster", "Certificate of Coverage and Notice to Workers as to Benefit Rights", "N.C. DES form NCDES 524"]
+    ] },
+    { "type": "list", "items": [
+      "A claimant who left work for a reason other than good cause attributable to the employer is disqualified; the burden of showing good cause is on the claimant (G.S. 96-14.5(a)). A unilateral permanent cut of more than 50% of hours or more than 15% in pay is presumed to be good cause (G.S. 96-14.5(b), (c)).",
+      "Discharge for misconduct connected with the work disqualifies the claimant; the statute lists prima facie examples including violation of a written absenteeism policy, theft, falsifying documents and refusal to perform assigned work evidenced by three written reprimands in the prior 12 months (G.S. 96-14.6).",
+      "Separation pay reported on the Request for Separation Information can affect the claimant's benefits, so the response must include any severance, vacation payout or bonus paid at separation.",
+      "Independent contractors are excluded from employment under G.S. 96-1(b)(12); a misclassified worker who files a claim triggers a liability audit."
+    ] },
+    { "type": "trap", "text": "The common mistake is ignoring the Request for Separation Information because the employer has no objection to the former employee drawing benefits, or answering it late with a one-line reason. The 10-day window is short, the response is the employer's only routine opportunity to put the reason for separation on the record, and a discharge described as poor fit rather than documented misconduct under G.S. 96-14.6 is charged to the employer's account and raises its rate for years." },
+    { "type": "prose", "text": "This is training, not legal advice." }
+  ],
+  "citations": [
+    { "authority": "N.C. Gen. Stat. § 96-1(b)(11), (12) (Employment Security Law definitions: employer; employment)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_96/GS_96-1.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 96-9.2 (required contributions; beginning and experience-rated rates; no deduction from wages)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_96/GS_96-9.2.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 96-14.5 (disqualification for leaving without good cause attributable to the employer)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_96/GS_96-14.5.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 96-14.6 (disqualification for misconduct)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_96/GS_96-14.6.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Division of Employment Security, Responding to Unemployment Claims (Request for Separation Information; 10 days)", "url": "https://www.des.nc.gov/responding-unemployment-claims", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Division of Employment Security, Certificate of Coverage and Notice to Workers as to Benefit Rights (NCDES 524)", "url": "https://www.des.nc.gov/documents/downloads/ncdes524-rev-1-21/open", "verified_on": "2026-09-17" }
+  ]
+}

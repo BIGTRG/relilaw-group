@@ -1,0 +1,91 @@
+{
+  "module": 1,
+  "position": 1,
+  "title": "At-will employment and the offer letter",
+  "summary": "What at-will means in North Carolina, what it does not mean, and the statutory promises an offer letter creates.",
+  "est_minutes": 9,
+  "blocks": [
+    {
+      "type": "prose",
+      "text": "North Carolina follows the at-will doctrine: absent a contract for a definite term, either the employer or the employee may end the relationship at any time, for any lawful reason or for no stated reason. The North Carolina Department of Labor describes at-will as the default rule and points to statutory exceptions that override it, the Retaliatory Employment Discrimination Act among them."
+    },
+    {
+      "type": "prose",
+      "text": "At-will is a default, not a shield. State statutes forbid discharge for specific reasons (jury service, protected complaints, lawful use of lawful products off duty, military membership), and federal anti-discrimination statutes apply once the employer reaches the relevant employee count. A decision that is lawful under at-will can still be unlawful under one of those statutes."
+    },
+    {
+      "type": "list",
+      "items": [
+        "An offer letter that states a rate of pay, a payday and a place of payment satisfies the written wage notice the Wage and Hour Act requires at the time of hiring (G.S. 95-25.13(1)).",
+        "Promised wages include sick pay, vacation pay, severance, commissions and bonuses when the employer has a policy or practice of paying them (G.S. 95-25.2(16)). Once promised in writing, they are wages the employee can recover.",
+        "A change to promised wages requires written notice at least one pay period in advance; only retroactive increases are exempt from the notice rule (G.S. 95-25.13(3)).",
+        "A written statement that employment is at-will does not remove the statutory exceptions; it only avoids creating a contract for a definite term."
+      ]
+    },
+    {
+      "type": "table",
+      "head": [
+        "Offer letter element",
+        "Why it matters in North Carolina"
+      ],
+      "rows": [
+        [
+          "Rate of pay and basis (hourly, salary, commission)",
+          "Satisfies G.S. 95-25.13(1); becomes a promised wage under G.S. 95-25.2(16)"
+        ],
+        [
+          "Regular payday and place or method of payment",
+          "Required content of the hire notice under G.S. 95-25.13(1); paydays may be daily to monthly under G.S. 95-25.6"
+        ],
+        [
+          "Bonus or commission plan terms, including when amounts become calculable",
+          "Determines the payment date at separation under G.S. 95-25.7"
+        ],
+        [
+          "Any policy that can cause forfeiture of vacation or a bonus",
+          "Forfeiture is unenforceable unless the employee was notified under G.S. 95-25.13 (G.S. 95-25.7, 95-25.12)"
+        ]
+      ]
+    },
+    {
+      "type": "trap",
+      "text": "The common mistake is treating the offer letter as marketing and the handbook as the legal document. In North Carolina the offer letter is the wage notice the statute requires at hiring. A letter that promises a signing bonus, an annual bonus or accrued vacation without stating the conditions has promised a wage with no forfeiture terms, and the employer will owe it at separation regardless of what the handbook says later."
+    },
+    {
+      "type": "prose",
+      "text": "This is training, not legal advice."
+    }
+  ],
+  "citations": [
+    {
+      "authority": "N.C. Gen. Stat. § 95-25.13 (notification, posting, and records)",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.13.html",
+      "verified_on": "2026-09-17"
+    },
+    {
+      "authority": "N.C. Gen. Stat. § 95-25.2(16) (definition of wage)",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.2.html",
+      "verified_on": "2026-09-17"
+    },
+    {
+      "authority": "N.C. Gen. Stat. § 95-25.7 (payment to separated employees)",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.7.html",
+      "verified_on": "2026-09-17"
+    },
+    {
+      "authority": "N.C. Gen. Stat. § 95-25.12 (vacation pay plans)",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.12.html",
+      "verified_on": "2026-09-17"
+    },
+    {
+      "authority": "N.C. Department of Labor, Retaliatory Employment Discrimination Bureau (employment at will and REDA exceptions)",
+      "url": "https://www.labor.nc.gov/workplace-rights/retaliatory-employment-discrimination-bureau",
+      "verified_on": "2026-09-17"
+    },
+    {
+      "authority": "N.C. Department of Labor, Employment at Will",
+      "url": "https://www.labor.nc.gov/workplace-rights/employee-rights-regarding-time-worked-and-wages-earned/employment-will",
+      "verified_on": "2026-09-17"
+    }
+  ]
+}

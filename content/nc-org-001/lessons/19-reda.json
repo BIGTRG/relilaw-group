@@ -1,0 +1,36 @@
+{
+  "module": 5,
+  "position": 19,
+  "title": "The Retaliatory Employment Discrimination Act",
+  "summary": "The protected activities, the 180-day complaint window, the right-to-sue letter, treble damages for willful violations and the same-decision defense.",
+  "est_minutes": 10,
+  "blocks": [
+    { "type": "prose", "text": "The Retaliatory Employment Discrimination Act (REDA), Article 21 of Chapter 95, is the statute that most often converts an ordinary North Carolina termination into a lawsuit. It prohibits any person from discriminating or taking retaliatory action against an employee because the employee in good faith files a claim or complaint, starts an inquiry or proceeding, testifies or provides information, or exercises rights under a list of statutes: the Workers' Compensation Act, the Wage and Hour Act, OSHANC, the Mine Safety and Health Act, the sickle cell and genetic information statutes, the National Guard reemployment article, the Hazardous Chemicals Right to Know Act, the pesticide article, the juvenile justice cooperation article and domestic violence protective orders. Retaliatory action means discharge, suspension, demotion, retaliatory relocation or other adverse action in the terms, conditions, privileges and benefits of employment." },
+    { "type": "prose", "text": "Enforcement runs through the Department of Labor's Retaliatory Employment Discrimination Bureau. The employee must file a complaint within 180 days of the alleged violation, through the Department's website form, by mail or by email. Session Law 2026-13 (June 2026) rewrote the complaint section: the complaint must now contain listed information including the protected activity, a description of the retaliatory action and any facts known to the complainant that would explain a legitimate reason for it, the respondent may submit a position statement, and time is computed under Rule 6 of the Rules of Civil Procedure. An employee may sue only after receiving a right-to-sue letter, and must file within 90 days of its issuance." },
+    { "type": "table", "head": ["Element", "Rule", "Source"], "rows": [
+      ["Complaint deadline", "180 days from the alleged violation; a partial complaint filed in time may be completed within 30 days of a deficiency notice", "G.S. 95-242(a)"],
+      ["Civil action", "Only after a right-to-sue letter; filed within 90 days of issuance, in superior court", "G.S. 95-243(a), (b), (e)"],
+      ["Relief", "Injunction, reinstatement, restored benefits and seniority, lost wages and economic losses", "G.S. 95-243(c)"],
+      ["Willful violation", "Economic damages trebled", "G.S. 95-243(c)"],
+      ["Fees", "Reasonable costs and attorneys' fees to a prevailing employee; to the employer if the action is frivolous", "G.S. 95-243(c)"],
+      ["Same-decision defense", "No violation if the employer proves by the greater weight of the evidence that it would have taken the same action absent the protected activity", "G.S. 95-241(b)"],
+      ["Jury trial", "Either party may demand", "G.S. 95-243(d)"]
+    ] },
+    { "type": "list", "items": [
+      "Good faith is the test for the employee's protected activity; the underlying wage or safety complaint does not have to be correct.",
+      "Threatening to file a complaint is protected, as is causing a complaint to be filed on the employee's behalf (G.S. 95-241(a)(1), (2)).",
+      "The same-decision defense is proven with contemporaneous documentation made before the protected activity, not with explanations assembled afterward.",
+      "The Commissioner may also bring the civil action within 90 days of notifying the parties that conciliation failed (G.S. 95-243(b))."
+    ] },
+    { "type": "trap", "text": "The common mistake is terminating an employee for attendance within a few weeks after the employee reported a workplace injury and filed a workers' compensation claim, with the attendance file assembled after the injury. Timing alone makes the case; the same-decision defense in G.S. 95-241(b) requires the employer to prove it would have fired the employee anyway, and the only evidence that carries that burden is a record of comparable discipline that predates the claim. A willful finding trebles the wage loss." },
+    { "type": "prose", "text": "This is training, not legal advice." }
+  ],
+  "citations": [
+    { "authority": "N.C. Gen. Stat. § 95-240 (REDA definitions: person; retaliatory action)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-240.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-241 (discrimination prohibited; same-decision defense)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-241.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-242 (complaint; investigation; conciliation), as rewritten by S.L. 2026-13", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-242.html", "verified_on": "2026-09-17" },
+    { "authority": "S.L. 2026-13 (HB 258), An Act to Amend the Retaliatory Employment Discrimination Act", "url": "https://www.ncleg.gov/EnactedLegislation/SessionLaws/HTML/2025-2026/SL2026-13.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-243 (civil action; remedies; treble damages)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-243.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Department of Labor, Retaliatory Employment Discrimination Bureau", "url": "https://www.labor.nc.gov/workplace-rights/retaliatory-employment-discrimination-bureau", "verified_on": "2026-09-17" }
+  ]
+}

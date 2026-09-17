@@ -1,0 +1,126 @@
+{
+  "module": 6,
+  "position": 22,
+  "title": "References, blacklisting, restrictive covenants and record retention",
+  "summary": "What may be said about a former employee, the writing requirement for non-competes, the absence of a private personnel-file access right, and how long each employment record must be kept.",
+  "est_minutes": 10,
+  "blocks": [
+    {
+      "type": "prose",
+      "text": "North Carolina's blacklisting statute makes it a Class 3 misdemeanor, with a fine of up to $500 and liability for penal damages in a civil action, for an employer that has discharged an employee to prevent or attempt to prevent, by word or writing, that person from obtaining other employment. The same section protects a truthful statement: on request from a prospective employer to whom the former employee has applied, the employer may furnish in writing a truthful statement of the reason for the discharge. The safe harbor is for truthful, written, requested statements about the discharge; volunteered commentary is outside it."
+    },
+    {
+      "type": "prose",
+      "text": "A contract limiting a person's right to do business anywhere in North Carolina is unenforceable unless it is in writing and signed by the party who agrees to the restriction. That is the statutory floor for non-competition agreements; the reasonableness requirements that courts apply on top of it are common law and are listed for attorney review. North Carolina has no statute giving private-sector employees a right to inspect or copy their personnel file; the Department of Labor's position is that each employer decides. Public employees have such rights under separate statutes not covered here."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Record",
+        "Minimum retention",
+        "Source"
+      ],
+      "rows": [
+        [
+          "Wage and Hour Act payroll records, notices and writings",
+          "Three years",
+          "13 NCAC 12 .0802"
+        ],
+        [
+          "FLSA payroll records",
+          "Three years; supplementary time records two years",
+          "29 C.F.R. §§ 516.5, 516.6"
+        ],
+        [
+          "Form I-9",
+          "Three years after hire or one year after separation, whichever is later",
+          "8 U.S.C. § 1324a(b)(3)"
+        ],
+        [
+          "E-Verify record (employers of 25 or more)",
+          "While employed and one year after",
+          "G.S. 64-26(b)"
+        ],
+        [
+          "Personnel and employment records of employers covered by Title VII or the ADA, including applications",
+          "One year from the record or action; one year from termination for involuntary terminations; until final disposition of any charge",
+          "29 C.F.R. § 1602.14"
+        ],
+        [
+          "Youth employment certificates and youth start and end times",
+          "Three years",
+          "13 NCAC 12 .0801(b), .0802"
+        ],
+        [
+          "Wage deduction authorizations and promised-wage policies",
+          "Three years",
+          "13 NCAC 12 .0801(b), .0802"
+        ]
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "A reference policy limited to dates of employment and position held is lawful; so is a truthful written statement of the reason for discharge given on request (G.S. 14-355).",
+        "Non-competition and non-solicitation covenants must be in a writing signed by the employee (G.S. 75-4); an unsigned covenant is unenforceable regardless of its terms.",
+        "Keep the expunction rule in mind after separation as well: a former employee's expunged record may not be referenced (G.S. 15A-153).",
+        "Where a discrimination charge or a Department of Labor complaint is pending, retain everything relevant until final disposition, even if the ordinary period has run (29 C.F.R. § 1602.14)."
+      ]
+    },
+    {
+      "type": "trap",
+      "text": "The common mistake is a manager who takes a reference call and says the former employee was let go for stealing, when the file shows a termination for attendance. The statement is not the truthful reason for the discharge, so it falls outside the G.S. 14-355 safe harbor, and a former employee who loses the new job can pursue the statutory penal damages as well as defamation. Route reference requests to one person, answer in writing on request, and say only what the file supports."
+    },
+    {
+      "type": "prose",
+      "text": "This is training, not legal advice."
+    }
+  ],
+  "citations": [
+    {
+      "authority": "N.C. Gen. Stat. § 14-355 (blacklisting employees; truthful statement safe harbor)",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_14/GS_14-355.html",
+      "verified_on": "2026-09-17"
+    },
+    {
+      "authority": "N.C. Gen. Stat. § 75-4 (contracts limiting the right to do business must be in writing and signed)",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_75/GS_75-4.html",
+      "verified_on": "2026-09-17"
+    },
+    {
+      "authority": "N.C. Gen. Stat. § 15A-153 (effect of expunction)",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_15A/GS_15A-153.html",
+      "verified_on": "2026-09-17"
+    },
+    {
+      "authority": "13 NCAC 12 .0801 and .0802 (records to be maintained; three-year retention)",
+      "url": "http://reports.oah.state.nc.us/ncac/title%2013%20-%20labor/chapter%2012%20-%20wage%20and%20hour/13%20ncac%2012%20.0801.pdf",
+      "verified_on": "2026-09-17"
+    },
+    {
+      "authority": "29 C.F.R. § 516.5 and § 516.6 (FLSA records preserved three years and two years)",
+      "url": "https://www.ecfr.gov/current/title-29/section-516.5",
+      "verified_on": "2026-09-17"
+    },
+    {
+      "authority": "8 U.S.C. § 1324a(b)(3) (Form I-9 retention)",
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title8-section1324a&num=0&edition=prelim",
+      "verified_on": "2026-09-17"
+    },
+    {
+      "authority": "N.C. Gen. Stat. § 64-26(b) (E-Verify record retention)",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_64/GS_64-26.html",
+      "verified_on": "2026-09-17"
+    },
+    {
+      "authority": "29 C.F.R. § 1602.14 (preservation of personnel records under Title VII and the ADA)",
+      "url": "https://www.ecfr.gov/current/title-29/section-1602.14",
+      "verified_on": "2026-09-17"
+    },
+    {
+      "authority": "N.C. Department of Labor, Employment at Will (each employer decides whether employees may see their personnel file)",
+      "url": "https://www.labor.nc.gov/workplace-rights/employee-rights-regarding-time-worked-and-wages-earned/employment-will",
+      "verified_on": "2026-09-17"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "module": 3,
+  "position": 10,
+  "title": "The FLSA and the Wage and Hour Act together",
+  "summary": "How North Carolina hands minimum wage, overtime and child labor to federal law for FLSA-covered enterprises while keeping wage payment rules for everyone.",
+  "est_minutes": 9,
+  "blocks": [
+    { "type": "prose", "text": "The Wage and Hour Act is written to sit on top of the Fair Labor Standards Act rather than duplicate it. For any person employed in an enterprise engaged in commerce or in the production of goods for commerce as defined in the FLSA, the state minimum wage, overtime and youth employment provisions (and the related record-keeping) do not apply, with specific carve-backs. For those employers the federal standards govern minimum wage and overtime, and the U.S. Department of Labor enforces them." },
+    { "type": "prose", "text": "The carve-backs matter. If the FLSA minimum wage for an employee would be less than the North Carolina rate, the state rate still applies (G.S. 95-25.14(a)(1)b.). If an FLSA exemption has no comparable North Carolina exemption, the employer does not get the state exemption, except that alternative overtime computation methods in the FLSA are honored (G.S. 95-25.14(a)(1)c.). And the youth employment certificate, the 11 p.m. school-night rule, the Commissioner's detrimental-occupation findings and the alcohol-service rules apply even to FLSA-covered employers (G.S. 95-25.5(k))." },
+    { "type": "table", "head": ["Topic", "FLSA-covered enterprise in North Carolina", "Enterprise not covered by the FLSA"], "rows": [
+      ["Minimum wage", "Federal $7.25; state rate applies only if higher", "State rate under G.S. 95-25.3 ($7.25 by reference to the federal rate)"],
+      ["Overtime", "Federal 29 U.S.C. § 207", "State G.S. 95-25.4"],
+      ["Wage payment: paydays, deductions, final pay, promised wages, notices", "State G.S. 95-25.6 through 95-25.13 apply", "State G.S. 95-25.6 through 95-25.13 apply"],
+      ["NCDOL authority over wage payment", "Only after an employee complaint (G.S. 95-25.15(a))", "Full investigative authority"],
+      ["Youth employment", "Federal child labor rules plus the state certificate, school-night, detrimental-occupation and alcohol rules (G.S. 95-25.5(k))", "State G.S. 95-25.5 in full"]
+    ] },
+    { "type": "list", "items": [
+      "Wage payment rules in G.S. 95-25.6 through 95-25.13 have no federal counterpart; every North Carolina employer follows them regardless of FLSA coverage.",
+      "The FLSA has no requirement to pay accrued vacation, give notice of wage changes or pay final wages by a deadline; those are state duties.",
+      "An employer that is exempt from FLSA minimum wage or overtime for a class of employees should confirm that G.S. 95-25.14 has the comparable exemption before relying on it in North Carolina.",
+      "Local governments cannot add wage or leave mandates; the Act preempts them (G.S. 95-25.1(d))."
+    ] },
+    { "type": "trap", "text": "The common mistake is assuming that because the business is covered by the FLSA, the North Carolina Department of Labor has nothing to say about it. The wage payment provisions still apply in full: the written wage notice at hire, the one-pay-period notice of changes, the deduction rules, the next-payday final pay rule and the promised-wages rule for vacation and bonuses are all state law with a private right of action and liquidated damages." },
+    { "type": "prose", "text": "This is training, not legal advice." }
+  ],
+  "citations": [
+    { "authority": "N.C. Gen. Stat. § 95-25.14(a)(1) (exemption of FLSA-covered enterprises from state minimum wage, overtime and youth provisions, with carve-backs)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.14.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-25.15(a) (Commissioner's authority over wage payment for FLSA-covered establishments limited to complaints)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.15.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-25.5(k) (youth employment provisions that apply to FLSA-covered employers)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.5.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-25.1(d) (local government preemption)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.1.html", "verified_on": "2026-09-17" },
+    { "authority": "29 U.S.C. § 206(a) and § 207(a) (FLSA minimum wage and maximum hours)", "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title29-section207&num=0&edition=prelim", "verified_on": "2026-09-17" }
+  ]
+}

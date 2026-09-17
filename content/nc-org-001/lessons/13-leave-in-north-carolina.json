@@ -1,0 +1,35 @@
+{
+  "module": 4,
+  "position": 13,
+  "title": "Leave in North Carolina: what the statutes actually require",
+  "summary": "No state paid leave mandate, the vacation forfeiture notice rule, jury duty protection and the four hours of school involvement leave.",
+  "est_minutes": 9,
+  "blocks": [
+    { "type": "prose", "text": "North Carolina has no statute requiring private employers to provide paid sick leave, paid vacation, paid family leave or paid holidays. The Wage and Hour Act says so directly for vacation: no employer is required to provide a vacation pay plan. What the Act does require is that an employer that promises vacation, sick pay or other paid time off honor its own policy or practice, and that any policy causing forfeiture of accrued vacation be communicated to employees in writing or by posted notice. Employees who were not notified are not subject to the forfeiture. Local governments cannot fill the gap; the Act preempts local leave ordinances for private employers." },
+    { "type": "prose", "text": "Two narrow state leave protections do exist. An employer may not discharge or demote an employee because the employee has been called for or is serving jury duty; the remedy is damages and reinstatement, with a one-year limitation. And every employer must grant four hours per year of leave to a parent, guardian or person standing in loco parentis of a school-aged child to attend or be involved at the child's school, at a mutually agreed time, on up to 48 hours' written request, with written verification from the school if the employer asks. The leave may be unpaid, and retaliation for requesting or taking it is actionable within one year." },
+    { "type": "table", "head": ["Leave type", "North Carolina requirement", "Source"], "rows": [
+      ["Paid sick leave", "None for private employers", "No statute; G.S. 95-25.1(d) preempts local mandates"],
+      ["Vacation and other promised paid time off", "Pay according to policy or practice; forfeiture only if the policy was communicated under G.S. 95-25.13", "G.S. 95-25.12, 95-25.2(16), 95-25.7"],
+      ["Jury duty", "No discharge or demotion; unpaid; damages and reinstatement", "G.S. 9-32"],
+      ["Parent involvement in schools", "Four hours per year, mutually agreed time, 48 hours' written notice may be required, unpaid", "G.S. 95-28.3"],
+      ["Family and medical leave", "Federal FMLA only, at 50 employees", "29 U.S.C. § 2611"],
+      ["Military leave", "USERRA reemployment; state anti-discrimination in Chapter 127B", "38 U.S.C. §§ 4311, 4312; G.S. 127B-11, 127B-14"]
+    ] },
+    { "type": "list", "items": [
+      "Accrued vacation is a wage under G.S. 95-25.2(16) when the employer has a policy or practice of paying it; at separation it is due on the next regular payday unless a communicated forfeiture policy applies (G.S. 95-25.7).",
+      "A use-it-or-lose-it rule, a no-payout-at-termination rule and a waiting period all count as forfeiture policies that must be communicated in advance (G.S. 95-25.12).",
+      "The school leave statute defines school to include public and private schools, preschools and licensed child care facilities (G.S. 95-28.3(a)).",
+      "Nothing in the jury or school leave statutes requires pay for the time away; the protection is against adverse action."
+    ] },
+    { "type": "trap", "text": "The common mistake is adopting a no-payout-at-termination vacation policy by email to managers, or adding it to a handbook revision nobody signs for, and then applying it to a departing employee. Under G.S. 95-25.12 and 95-25.7 the forfeiture binds only employees who were notified in writing or by posted notice. Without proof of notice the accrued balance is a promised wage owed on the next regular payday, and the employer is exposed to double damages." },
+    { "type": "prose", "text": "This is training, not legal advice." }
+  ],
+  "citations": [
+    { "authority": "N.C. Gen. Stat. § 95-25.12 (vacation pay plans)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.12.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-25.7 (payment to separated employees; forfeiture requires notice)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.7.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-25.1(d) (preemption of local leave and benefit mandates)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.1.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 9-32 (discharge of juror unlawful)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_9/GS_9-32.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-28.3 (leave for parent involvement in schools)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-28.3.html", "verified_on": "2026-09-17" },
+    { "authority": "29 U.S.C. § 2611(4) (FMLA employer threshold)", "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title29-section2611&num=0&edition=prelim", "verified_on": "2026-09-17" }
+  ]
+}

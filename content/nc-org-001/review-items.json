@@ -1,0 +1,42 @@
+[
+  {
+    "title": "FLSA executive, administrative and professional salary level: confirm $684 remains operative",
+    "detail": "Lesson 6 states the standard salary level as $684 per week, which is what 29 C.F.R. § 541.600 showed on eCFR on 2026-09-17. The Department of Labor's 2024 rule raising the level to $844 and then $1,128 was vacated by the Eastern District of Texas in November 2024. I could not confirm from a primary source the status of any appeal or replacement rulemaking as of September 2026. Attorney to confirm the operative federal salary level before publication, since North Carolina adopts the FLSA definitions by reference in G.S. 95-25.14(b)(4).",
+    "lesson_ref": "06-overtime-workweek-and-exemptions"
+  },
+  {
+    "title": "S.L. 2026-13 rewrite of the REDA complaint procedure: confirm agency implementation",
+    "detail": "Session Law 2026-13 (HB 258, approved 2026-06-22, effective on becoming law) rewrote G.S. 95-242 to prescribe the required contents of a REDA complaint, permit filing through a form on the Department's website, allow the respondent to submit a position statement, address extraneous materials, and add G.S. 95-246 applying Rule 6 to computation of time. Lesson 19 summarizes the new statutory text. I could not confirm whether the Department of Labor has published the website form and updated its administrative rules (13 NCAC 20) to match, or how Rule 6 computation interacts with the 180-day window in practice. Attorney to confirm the description and decide whether to describe the position-statement step in more detail.",
+    "lesson_ref": "19-reda"
+  },
+  {
+    "title": "G.S. 95-25.5 youth employment: recent amendments and the Department's rules",
+    "detail": "G.S. 95-25.5 was amended by S.L. 2025-56 (fire training courses for qualified youth, subsection (n)) and S.L. 2026-49 (ski area volunteering, new subsection (o), effective 2026-10-01). Lesson 15 mentions subsection (o) as pending and does not describe subsection (n). I did not verify whether the Department of Labor's youth employment rules in 13 NCAC 12 .0400 and its online certificate system have been updated for either change, or whether any 2025 or 2026 session law changed the hour limits for 14- and 15-year-olds. Attorney to confirm the lesson reflects the statute as it will read on the publication date.",
+    "lesson_ref": "15-youth-employment"
+  },
+  {
+    "title": "Criminal history inquiries: accuracy of the statement that North Carolina has no private-sector ban-the-box law",
+    "detail": "Lesson 3 states that North Carolina has not enacted a statute restricting private employers' timing of criminal history questions and relies on G.S. 15A-153 for expunged records. I did not verify Executive Order 158 (2020), which I understand addresses fair-chance hiring for State agencies only, or any local government fair-chance ordinances that bind only the locality's own hiring, and I did not include Fair Credit Reporting Act duties for third-party background reports. Attorney to confirm the negative statement is accurate as of publication and to decide whether the FCRA steps belong in this lesson or a later course.",
+    "lesson_ref": "03-background-checks-and-applicant-costs"
+  },
+  {
+    "title": "State health insurance continuation for employers below the COBRA threshold",
+    "detail": "Lessons 12 and 21 state the federal COBRA rule and its exception for plans of employers that normally employed fewer than 20 employees. I did not verify whether Chapter 58 of the General Statutes (insurance) imposes a state continuation or conversion right on insured group health plans of smaller North Carolina employers, what notice the employer must give, or whether that duty falls on the insurer rather than the employer. Attorney to confirm and, if a state continuation right exists, add the employer's notice duty to the separation checklist.",
+    "lesson_ref": "12-cobra-adea-and-military-service"
+  },
+  {
+    "title": "Equal Employment Practices Act (G.S. 143-422.2): how to characterize the exposure",
+    "detail": "Lessons 12 and 14 describe G.S. 143-422.2 as a public policy declaration for employers regularly employing 15 or more, and lesson 12 says the enforceable age discrimination claim begins at 20 employees under the ADEA. North Carolina courts have recognized a common-law wrongful discharge claim based on the public policy in G.S. 143-422.2, which would give a discharged employee of a 15-to-19-employee employer a state claim that the lesson currently does not mention. I did not verify case law from a primary source and did not include it. Attorney to confirm how the course should describe the practical exposure between 15 and 19 employees for age, and for the other listed categories, and whether the Human Relations Commission process in G.S. 143-422.3 should be described.",
+    "lesson_ref": "14-protected-off-duty-conduct-and-status"
+  },
+  {
+    "title": "Occupational safety: State Plan status and adoption of federal recordkeeping rules",
+    "detail": "Lesson 16 states that the N.C. Department of Labor, not federal OSHA, enforces workplace safety standards in North Carolina under OSHANC and that the substantive standards are largely the federal ones adopted by the Commissioner. That is consistent with the legislative purpose in G.S. 95-126(b) but I did not verify from a primary source the current federal approval of the North Carolina State Plan, its coverage of private and public employers, or the North Carolina rule (13 NCAC 07) that adopts 29 C.F.R. Part 1904, which the lesson cites directly for the 10-or-fewer recordkeeping exemption. Attorney to confirm the enforcement description and the correct citation form for the recordkeeping exemption as applied in North Carolina.",
+    "lesson_ref": "16-oshanc"
+  },
+  {
+    "title": "Restrictive covenants: statutory writing requirement versus common-law enforceability",
+    "detail": "Lesson 22 states only the statutory rule in G.S. 75-4 that a contract limiting the right to do business in North Carolina must be in a writing signed by the restricted party. It does not describe the common-law requirements courts apply (legitimate business interest, reasonable time and territory, consideration, including the rule that a covenant signed after employment begins needs new consideration), and it does not address the status of the Federal Trade Commission's 2024 non-compete rule, which I understand was set aside by a federal court and which I could not verify as of September 2026. Attorney to decide how much of the common-law framework belongs in an Orange Belt lesson and to confirm the FTC rule's status so the lesson does not imply federal preemption either way.",
+    "lesson_ref": "22-references-covenants-and-records"
+  }
+]

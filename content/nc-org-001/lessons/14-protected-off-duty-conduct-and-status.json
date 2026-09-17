@@ -1,0 +1,32 @@
+{
+  "module": 4,
+  "position": 14,
+  "title": "Protected off-duty conduct and protected status under state law",
+  "summary": "Lawful use of lawful products, sickle cell and hemoglobin C trait, genetic information and military membership: the North Carolina statutes that reach employers of any size or of three or more.",
+  "est_minutes": 8,
+  "blocks": [
+    { "type": "prose", "text": "Beyond the federal anti-discrimination statutes, North Carolina has a small set of stand-alone employment protections. Several have no employee-count threshold at all, and one starts at three employees. Because they are scattered across Chapters 95 and 127B rather than gathered in one civil rights act, small employers frequently do not know they exist." },
+    { "type": "table", "head": ["Protection", "Who is covered", "What is prohibited", "Remedy"], "rows": [
+      ["Lawful use of lawful products off premises during nonworking hours (tobacco is the usual example)", "Private employers with three or more regularly employed employees", "Refusing to hire, discharging or discriminating because of lawful off-duty use that does not affect performance or safety", "Civil action within one year: lost wages, reinstatement, order to hire; costs and fees to the prevailing party (G.S. 95-28.2)"],
+      ["Sickle cell trait or hemoglobin C trait", "Every employer, public or private", "Denying employment or discharging on account of the trait", "REDA retaliation protection (G.S. 95-241(a)(1)d.)"],
+      ["Genetic testing or genetic information", "Every employer, public or private", "Denying employment or discharging because the person requested genetic testing or counseling, or on the basis of genetic information about the person or a family member", "REDA retaliation protection (G.S. 95-241(a)(1)f.)"],
+      ["Military membership or service (State or U.S. forces)", "Every person and employer", "Prejudicing or injuring a member in employment because of membership or service; discharge for emergency duty", "Class 2 misdemeanor, each violation separate (G.S. 127B-15)"]
+    ] },
+    { "type": "list", "items": [
+      "The lawful-products statute allows restrictions tied to a bona fide occupational requirement, to the fundamental objectives of the organization, or to an employer's substance abuse prevention program (G.S. 95-28.2(c)).",
+      "An employer may charge different insurance rates to users and non-users of lawful products only if the differential is actuarially justified, disclosed in writing and the employer contributes equally for each employee (G.S. 95-28.2(d)).",
+      "The sickle cell and genetic information statutes expressly do not prevent discharge for cause and do not create a preference in hiring, promotion or layoff (G.S. 95-28.1, 95-28.1A).",
+      "The Equal Employment Practices Act (G.S. 143-422.2) states the public policy against discrimination on race, religion, color, national origin, age, sex or handicap for employers of 15 or more; the Human Relations Commission may investigate and conciliate (G.S. 143-422.3)."
+    ] },
+    { "type": "trap", "text": "The common mistake is a hiring policy that screens out tobacco users to hold down health premiums. For a private employer with three or more regular employees, refusing to hire an applicant for lawful off-duty tobacco use is a violation of G.S. 95-28.2 unless a listed exception applies; the statute allows an actuarially justified premium differential with written notice, not a hiring bar." },
+    { "type": "prose", "text": "This is training, not legal advice." }
+  ],
+  "citations": [
+    { "authority": "N.C. Gen. Stat. § 95-28.2 (discrimination for lawful use of lawful products during nonworking hours prohibited)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-28.2.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-28.1 (sickle cell trait or hemoglobin C trait)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-28.1.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-28.1A (genetic testing or genetic information)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-28.1A.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-241(a)(1) (REDA protected activities, including G.S. 95-28.1 and 95-28.1A)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-241.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. §§ 127B-11, 127B-14, 127B-15 (military discrimination; penalties)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_127B/GS_127B-11.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 143-422.2 and § 143-422.3 (Equal Employment Practices Act; Human Relations Commission)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_143/GS_143-422.3.html", "verified_on": "2026-09-17" }
+  ]
+}

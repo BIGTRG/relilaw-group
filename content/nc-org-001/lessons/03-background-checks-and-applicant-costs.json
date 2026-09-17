@@ -1,0 +1,28 @@
+{
+  "module": 1,
+  "position": 3,
+  "title": "Background checks, expunged records and applicant costs",
+  "summary": "What a North Carolina employer may ask about criminal history, the expunction rule it must respect, and who pays for pre-hire examinations.",
+  "est_minutes": 8,
+  "blocks": [
+    { "type": "prose", "text": "North Carolina has not enacted a statute that bars private employers from asking about criminal history on an application (a so-called ban-the-box law for the private sector). The statute that does bind every employer is the expunction rule in Chapter 15A. An employer may not, in an application, interview or otherwise, require an applicant to disclose an arrest, charge or conviction that has been expunged, and may not knowingly and willingly inquire about a record it knows to have been expunged. The applicant is not committing a false statement by leaving an expunged record out." },
+    { "type": "prose", "text": "The same section confirms what remains permitted: an employer may ask about charges or convictions that have not been expunged and that are part of the public record. The practical consequence is a wording change on the application: ask about records that have not been expunged, and do not treat an omission of an expunged record as dishonesty." },
+    { "type": "list", "items": [
+      "Do not require disclosure of expunged arrests, charges or convictions (G.S. 15A-153(c)).",
+      "An applicant's answer about arrests or charges that did not result in conviction need not include expunged matters (G.S. 15A-153(c)).",
+      "Employers with 25 or more employees may not require an applicant to pay for a medical examination or for records the employer requires as a condition of the initial hire; the Commissioner of Labor enforces this with a fine of up to $100 per violation (G.S. 14-357.1).",
+      "Federal Fair Credit Reporting Act duties (disclosure, authorization, pre-adverse-action notice) apply when a consumer reporting agency prepares the report; they are outside this lesson's North Carolina scope and are listed for attorney review."
+    ] },
+    { "type": "table", "head": ["Question on the application", "Status in North Carolina"], "rows": [
+      ["Have you ever been convicted of a crime that has not been expunged?", "Permitted by G.S. 15A-153(a) and (c)"],
+      ["List all arrests, including any that were expunged.", "Prohibited by G.S. 15A-153(c)"],
+      ["Please pay the $45 drug-screen fee before your start date (employer with 25 or more employees).", "Prohibited as a condition of the initial hire by G.S. 14-357.1"]
+    ] },
+    { "type": "trap", "text": "The common mistake is a stock application form that asks the applicant to list every arrest and states that any omission is grounds for termination. Under G.S. 15A-153 the applicant is entitled to omit an expunged record and cannot be treated as having lied. Firing a new hire for that omission is a dismissal for exercising a statutory right, and the form itself is the evidence." },
+    { "type": "prose", "text": "This is training, not legal advice." }
+  ],
+  "citations": [
+    { "authority": "N.C. Gen. Stat. § 15A-153 (effect of expunction; prohibited practices by employers)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_15A/GS_15A-153.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 14-357.1 (requiring payment for medical examination as condition of employment; employers of 25 or more)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_14/GS_14-357.1.html", "verified_on": "2026-09-17" }
+  ]
+}

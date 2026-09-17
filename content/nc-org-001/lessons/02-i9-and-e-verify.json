@@ -1,0 +1,33 @@
+{
+  "module": 1,
+  "position": 2,
+  "title": "Form I-9 and North Carolina E-Verify",
+  "summary": "Federal employment eligibility verification for every hire, and the state E-Verify mandate that starts at 25 employees.",
+  "est_minutes": 10,
+  "blocks": [
+    { "type": "prose", "text": "Every employer in the United States must verify the identity and employment authorization of each new hire on Form I-9. The federal statute requires the employer to retain the completed form for three years after the date of hire or one year after employment ends, whichever is later, and to make it available for inspection. The regulation requires the employer to examine the employee's documents and complete the employer section within three business days of the hire." },
+    { "type": "prose", "text": "North Carolina adds a state mandate on top of the federal form. Under Article 2 of Chapter 64 (Verification of Work Authorization), an employer that transacts business in the State and employs 25 or more employees in the State must, after hiring an employee to work in the United States, verify that employee's work authorization through E-Verify. The state law excludes from its definition of employee an individual whose term of employment is less than nine months in a calendar year, and it excludes State agencies, counties and municipalities from its definition of employer. The employer must keep the E-Verify record while the employee is employed and for one year afterward." },
+    { "type": "table", "head": ["Requirement", "Form I-9 (federal)", "E-Verify (N.C. Gen. Stat. § 64-26)"], "rows": [
+      ["Who must comply", "Every employer, every hire", "Private employers with 25 or more employees in North Carolina"],
+      ["Timing", "Employer section within three business days of hire (8 C.F.R. § 274a.2)", "After hiring; the statute does not set a day count of its own"],
+      ["Retention", "Three years after hire or one year after separation, whichever is later (8 U.S.C. § 1324a(b)(3))", "While employed and for one year thereafter (§ 64-26(b))"],
+      ["Enforcement", "Federal agencies", "N.C. Commissioner of Labor on complaint; orders and civil penalties under §§ 64-31 to 64-33"]
+    ] },
+    { "type": "list", "items": [
+      "First violation: the Commissioner orders a sworn affidavit within three business days stating that the employer has requested E-Verify verification after consulting the employee; failure to file the affidavit carries a $10,000 civil penalty (G.S. 64-31).",
+      "Second violation: the affidavit order plus a $1,000 civil penalty regardless of how many verifications were missed (G.S. 64-32).",
+      "Third or later violation: the affidavit order plus $2,000 for each verification the employer failed to make (G.S. 64-33).",
+      "Complaints go to the N.C. Department of Labor Wage and Hour Bureau; the complaint form is on labor.nc.gov."
+    ] },
+    { "type": "trap", "text": "The common mistake is to count the whole company when deciding whether the state E-Verify rule applies, or to count only full-time staff. The statute counts employees in this State, and it excludes anyone whose term of employment is under nine months in the calendar year. An employer with 30 staff of whom 10 are seasonal hires may be under the threshold; an employer with 24 North Carolina staff plus 5 in another state is under it. Get the count wrong in the other direction and the employer has skipped a mandatory verification for every hire since it crossed 25." },
+    { "type": "prose", "text": "This is training, not legal advice." }
+  ],
+  "citations": [
+    { "authority": "N.C. Gen. Stat. § 64-25 (definitions: employer of 25 or more employees in this State; employee)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_64/GS_64-25.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 64-26 (verification of employee work authorization; retention)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_64/GS_64-26.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. §§ 64-31 to 64-33 (consequences of first, second and subsequent violations)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_64/GS_64-31.html", "verified_on": "2026-09-17" },
+    { "authority": "8 U.S.C. § 1324a(b)(3) (retention of verification form)", "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title8-section1324a&num=0&edition=prelim", "verified_on": "2026-09-17" },
+    { "authority": "8 C.F.R. § 274a.2(b)(1)(ii) (employer review within three business days of hire)", "url": "https://www.ecfr.gov/current/title-8/section-274a.2", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Department of Labor, E-Verify (Verification of Work Authorization complaint process)", "url": "https://www.labor.nc.gov/workplace-rights/e-verify", "verified_on": "2026-09-17" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "module": 2,
+  "position": 7,
+  "title": "Paydays, wage changes and deductions from pay",
+  "summary": "The regular payday rule, the one-pay-period notice for wage changes, and the strict conditions for withholding any part of an employee's wages.",
+  "est_minutes": 11,
+  "blocks": [
+    { "type": "prose", "text": "Every employer must pay all wages and tips accruing to the employee on the regular payday. Pay periods may be daily, weekly, bi-weekly, semi-monthly or monthly, and wages based on bonuses, commissions or other calculations may be paid as infrequently as annually if that schedule is prescribed in advance. A change to promised wages requires written notice at least one pay period before it takes effect; only a retroactive increase is exempt from the notice." },
+    { "type": "prose", "text": "Deductions are where most North Carolina wage claims begin. An employer may withhold or divert part of an employee's wages only when the law requires or empowers it (taxes, garnishments, child support withholding), or with the employee's written authorization. The authorization rules differ depending on whether the amount is known in advance." },
+    { "type": "table", "head": ["Deduction type", "What G.S. 95-25.8 requires"], "rows": [
+      ["Required or empowered by State or federal law", "No authorization needed (subsection (a)(1))"],
+      ["Amount or rate known and agreed in advance (uniform purchase, insurance premium)", "Written authorization signed on or before the payday, stating the reason and the actual dollar amount or percentage; if for the employee's convenience, a reasonable opportunity to withdraw (subsection (a)(2))"],
+      ["Amount not known in advance", "Written authorization signed on or before the payday stating the reason; then, before each deduction, advance written notice of the actual amount, written notice of the right to withdraw, and a reasonable opportunity to withdraw in writing (subsection (a)(3))"],
+      ["Cash shortage, inventory shortage, loss or damage to employer property", "All of the above plus written notice of the amount seven days before the payday; the seven-day notice is not required at separation (subsection (c))"],
+      ["Overpayment from bona fide error, wage advances, principal of an employer loan", "Treated as prepayment of wages; may be deducted without authorization, but interest and charges on a loan require authorization (subsection (d))"]
+    ] },
+    { "type": "list", "items": [
+      "A deduction for the employer's benefit may reduce pay only to the minimum wage in non-overtime weeks, only for non-overtime hours in overtime weeks, and never from overtime wages (G.S. 95-25.8(b)).",
+      "Each pay period in which a deduction is made the employee must receive an itemized statement of the deductions (G.S. 95-25.13(4)).",
+      "Written authorizations and notices may be electronic records under the Uniform Electronic Transactions Act (G.S. 95-25.8(f)).",
+      "If wages are in dispute, the employer must pay the undisputed part on time and without condition; a release demanded as a condition of partial payment is void (G.S. 95-25.7A).",
+      "The employer keeps its right to sue the employee in court for amounts it believes are owed (G.S. 95-25.8(g)); what it cannot do is take them from the paycheck without meeting the statute."
+    ] },
+    { "type": "trap", "text": "The common mistake is a handbook clause or a signed acknowledgment at hire that says the employee agrees to repay any shortage, damage or unreturned equipment out of final pay. That is not an authorization under G.S. 95-25.8. For an amount not known in advance the statute requires a signed authorization stating the reason, then advance written notice of the actual amount, written notice of the right to withdraw, and a real chance to withdraw, and for shortages or damage a further seven days' written notice before the payday. A blanket clause satisfies none of those steps, and the deduction may never touch overtime wages." },
+    { "type": "prose", "text": "This is training, not legal advice." }
+  ],
+  "citations": [
+    { "authority": "N.C. Gen. Stat. § 95-25.6 (wage payment; pay periods)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.6.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-25.8 (withholding of wages)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.8.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-25.13 (written notice at hire and one pay period before changes; itemized deductions)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.13.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-25.7A (wages in dispute)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.7A.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Department of Labor, Deductions from Wages", "url": "https://www.labor.nc.gov/workplace-rights/employee-rights-regarding-time-worked-and-wages-earned/deductions-wages", "verified_on": "2026-09-17" }
+  ]
+}

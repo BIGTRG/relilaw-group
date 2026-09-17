@@ -1,0 +1,21 @@
+{
+  "code": "NC-ORG-001",
+  "title": "NC-ORG-001 · North Carolina Employment Law for Employers — Orange Belt",
+  "summary": "Orange Belt course for North Carolina organization administrators and small employers: hiring and onboarding, the Wage and Hour Act, the federal overlay and its employee-count thresholds, leave and youth employment, safety, workers' compensation and unemployment insurance, and separation. Legal-information training, not legal advice. Draft, unsigned; pending attorney review.",
+  "jurisdiction": "US-NC",
+  "rank_code": "orange",
+  "audience": "Organization administrators, owners and managers of small and mid-sized North Carolina employers",
+  "status": "draft",
+  "signed": false,
+  "reviewer": null,
+  "verified_on": "2026-09-17",
+  "disclaimer": "This is training, not legal advice.",
+  "modules": [
+    { "position": 1, "title": "Module 1 · Hiring and onboarding in North Carolina", "status": "draft", "signed": false, "reviewer": null },
+    { "position": 2, "title": "Module 2 · The Wage and Hour Act", "status": "draft", "signed": false, "reviewer": null },
+    { "position": 3, "title": "Module 3 · The federal overlay and how it meets North Carolina law", "status": "draft", "signed": false, "reviewer": null },
+    { "position": 4, "title": "Module 4 · Leave, time off and youth employment", "status": "draft", "signed": false, "reviewer": null },
+    { "position": 5, "title": "Module 5 · Safety, workers' compensation, unemployment insurance and retaliation", "status": "draft", "signed": false, "reviewer": null },
+    { "position": 6, "title": "Module 6 · Discipline, separation and records", "status": "draft", "signed": false, "reviewer": null }
+  ]
+}

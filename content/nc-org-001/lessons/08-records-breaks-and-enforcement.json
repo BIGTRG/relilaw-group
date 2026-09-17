@@ -1,0 +1,35 @@
+{
+  "module": 2,
+  "position": 8,
+  "title": "Wage records, breaks and how the Act is enforced",
+  "summary": "What payroll records must contain and for how long, the truth about breaks in North Carolina, and what a Wage and Hour claim costs.",
+  "est_minutes": 9,
+  "blocks": [
+    { "type": "prose", "text": "Every employer subject to the Wage and Hour Act must make, keep and preserve records of the persons it employs, including ages, wages, hours and other conditions of employment as prescribed by the Commissioner's rules. The Department of Labor's rule lists the required fields for each employee in each workweek and requires that all records, posted notices and writings required by the Act be kept for three years. The federal FLSA rule likewise requires payroll records to be kept three years." },
+    { "type": "prose", "text": "North Carolina does not require rest breaks or meal breaks for employees 16 or older. The only break rule in the Act is for youths under 16, who may not work more than five consecutive hours without a 30-minute break. If an employer chooses to give breaks, the Department of Labor's guidance is that a break must be at least 30 minutes and duty-free for the time to be unpaid; shorter breaks are paid time." },
+    { "type": "table", "head": ["Record (13 NCAC 12 .0801)", "Retention"], "rows": [
+      ["Name, address, date of birth if under 20, occupation, workweek start day and time", "Three years (13 NCAC 12 .0802)"],
+      ["Regular rate, hours each workday, total hours each workweek, straight-time and overtime earnings", "Three years"],
+      ["Additions to and deductions from wages, gross wages each pay period, date of each payment", "Three years"],
+      ["Tip credit records, meals and lodging costs, youth start and end times, youth employment certificates, wage deduction authorizations, vacation and sick leave policies, promised-wage policies", "Three years"],
+      ["Federal FLSA payroll records", "Three years (29 C.F.R. § 516.5); supplementary time records two years (§ 516.6)"]
+    ] },
+    { "type": "list", "items": [
+      "Record-keeping violations carry a civil penalty of $750 per employee, capped at $4,500 per violation, with a two-year limitation (G.S. 95-25.23A).",
+      "An employee (or the Commissioner on the employee's request) may sue for unpaid minimum wage, overtime or promised wages, plus interest, plus an equal amount as liquidated damages unless the employer proves good faith and reasonable grounds; the court may add attorneys' fees (G.S. 95-25.22).",
+      "Actions must be brought within two years (G.S. 95-25.22(f)).",
+      "For employers covered by the FLSA, the Department of Labor investigates wage payment complaints (G.S. 95-25.6 through 95-25.12) only when an employee has complained (G.S. 95-25.15(a)); minimum wage and overtime for those employers are federal matters."
+    ] },
+    { "type": "trap", "text": "The common mistake is an automatic 30-minute meal deduction in the timekeeping system. North Carolina does not require the break, but if the system deducts it on a day the employee ate at the desk while covering the phone, the employer has failed to pay for hours worked and its own records are wrong. An automatic deduction with no attestation is the plaintiff's best exhibit in an overtime case." },
+    { "type": "prose", "text": "This is training, not legal advice." }
+  ],
+  "citations": [
+    { "authority": "N.C. Gen. Stat. § 95-25.15 (investigations and inspection of records; notice of law)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.15.html", "verified_on": "2026-09-17" },
+    { "authority": "13 NCAC 12 .0801 (records to be maintained) and .0802 (record retention: three years)", "url": "http://reports.oah.state.nc.us/ncac/title%2013%20-%20labor/chapter%2012%20-%20wage%20and%20hour/13%20ncac%2012%20.0801.pdf", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-25.5(e) (30-minute break for youths under 16 after five consecutive hours)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.5.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Department of Labor, What to Know About Breaks", "url": "https://www.labor.nc.gov/workplace-rights/employee-rights-regarding-time-worked-and-wages-earned/what-know-about-breaks", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-25.23A (violation of record-keeping requirement; civil penalty)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.23A.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-25.22 (recovery of unpaid wages)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.22.html", "verified_on": "2026-09-17" },
+    { "authority": "29 C.F.R. § 516.5 (records to be preserved 3 years)", "url": "https://www.ecfr.gov/current/title-29/section-516.5", "verified_on": "2026-09-17" }
+  ]
+}

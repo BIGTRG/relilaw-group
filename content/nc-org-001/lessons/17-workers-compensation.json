@@ -1,0 +1,37 @@
+{
+  "module": 5,
+  "position": 17,
+  "title": "Workers' compensation: coverage at three employees",
+  "summary": "Who must insure under Chapter 97, the posting duty, the daily penalty for going bare, and the notice and claim deadlines after an injury.",
+  "est_minutes": 9,
+  "blocks": [
+    { "type": "prose", "text": "The North Carolina Workers' Compensation Act applies to every private employment in which three or more employees are regularly employed in the same business or establishment, and to any employer with one or more employees in activities involving radiation. Agricultural employers are covered at 10 or more full-time non-seasonal workers; casual employees, domestic servants and certain small sawmill and logging operators are excepted. Every covered employer and employee is presumed to have accepted the Act, which substitutes scheduled compensation for tort liability for injury by accident arising out of and in the course of employment." },
+    { "type": "prose", "text": "A covered employer must either insure its liability with an authorized carrier or qualify as a self-insurer licensed by the Commissioner of Insurance, and must post a notice in a conspicuous place stating that employment is subject to the Act and whether the employer is insured or self-insured. If coverage lapses, the notice must come down within five working days. The Industrial Commission states that corporate officers are counted toward the three-employee threshold, although officers may elect to exclude themselves from a policy." },
+    { "type": "table", "head": ["Requirement", "Rule", "Source"], "rows": [
+      ["Coverage threshold", "Three or more regularly employed; one or more where radiation is involved", "G.S. 97-2(1); 97-13(b)"],
+      ["Secure payment", "Insure with an authorized carrier or obtain a self-insurance license", "G.S. 97-93(a)"],
+      ["Post notice", "Conspicuous notice of coverage and whether insured or self-insured; remove within five working days of a lapse", "G.S. 97-93(e)"],
+      ["Penalty for failing to insure", "$1 per employee per day, not less than $20 nor more than $100 per day, for each day of noncompliance; alternative penalty based on policy cost if coverage is obtained", "G.S. 97-94(b1), (b2)"],
+      ["Employee notice of accident", "Written notice to the employer immediately or as soon as practicable; no compensation unless notice within 30 days absent reasonable excuse and no prejudice", "G.S. 97-22"],
+      ["Claim deadline", "Claim filed with the Commission within two years of the accident, or of the last medical payment where only medical was paid", "G.S. 97-24(a)"]
+    ] },
+    { "type": "list", "items": [
+      "Counting: the test is regular employment in the same business within the State; part-time employees who are regularly employed count.",
+      "The employer's knowledge of the accident substitutes for the employee's written notice (G.S. 97-22), so a supervisor's incident report protects the employee's claim and the employer's records alike.",
+      "Filing or threatening to file a workers' compensation claim is protected activity under REDA (G.S. 95-241(a)(1)a.); the REDA complaint form asks for the Form 18 from the claim.",
+      "Principal contractors who use uninsured subcontractors can be liable for the subcontractor's employees' compensation (G.S. 97-19)."
+    ] },
+    { "type": "trap", "text": "The common mistake is a two-owner company that hires its first employee and concludes it is under the three-employee threshold. If both owners are corporate officers on the payroll, the Industrial Commission counts them, the company has three employees and must insure. Going bare costs at least $20 a day for every day of noncompliance under G.S. 97-94(b1), and an uninsured injury leaves the company paying the claim itself." },
+    { "type": "prose", "text": "This is training, not legal advice." }
+  ],
+  "citations": [
+    { "authority": "N.C. Gen. Stat. § 97-2(1), (2) (definitions: employment; employee)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_97/GS_97-2.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 97-3 (presumption of acceptance of the Article)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_97/GS_97-3.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 97-13(b) (exceptions: fewer than three employees, casual, domestic, farm)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_97/GS_97-13.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 97-93 (employers required to carry insurance; posting)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_97/GS_97-93.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 97-94 (penalty for failing to insure)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_97/GS_97-94.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 97-22 (notice of accident to employer) and § 97-24 (two-year claim bar)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_97/GS_97-22.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 97-19 (liability of principal contractors)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_97/GS_97-19.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Industrial Commission, Employers (coverage; corporate officers counted)", "url": "https://www.ic.nc.gov/workers-compensation-claims/employers", "verified_on": "2026-09-17" }
+  ]
+}

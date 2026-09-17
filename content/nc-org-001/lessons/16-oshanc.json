@@ -1,0 +1,37 @@
+{
+  "module": 5,
+  "position": 16,
+  "title": "Workplace safety under the Occupational Safety and Health Act of North Carolina",
+  "summary": "The State-run safety program, the general duty and standards duties, inspections and citations, and the small-employer recordkeeping exemption.",
+  "est_minutes": 9,
+  "blocks": [
+    { "type": "prose", "text": "North Carolina enforces workplace safety through its own statute, the Occupational Safety and Health Act of North Carolina (OSHANC), Article 16 of Chapter 95. The General Assembly authorized the Commissioner of Labor to develop standards and to adopt the standards issued by the U.S. Secretary of Labor under the federal OSH Act, so the substantive standards a North Carolina employer follows are largely the federal ones, enforced by the N.C. Department of Labor's Occupational Safety and Health Division rather than by federal OSHA." },
+    { "type": "prose", "text": "Every employer has two core duties: to furnish conditions and a place of employment free from recognized hazards that are causing or likely to cause death or serious physical harm, and to comply with the occupational safety and health standards adopted under the Article. Employers must also allow the Commissioner's agents to inspect and must assist by supplying information and personnel. The federal statute defines an employer as any person engaged in a business affecting commerce who has employees; there is no small-business floor for the duties themselves." },
+    { "type": "table", "head": ["Provision", "What it does"], "rows": [
+      ["G.S. 95-129(1), (2)", "General duty to provide a workplace free from recognized serious hazards; duty to comply with standards"],
+      ["G.S. 95-129(3)", "Duty not to unreasonably restrain inspections and to assist inspectors"],
+      ["G.S. 95-130", "Employee rights: participate in standards development, request inspections, contest abatement periods, petition on toxic exposures"],
+      ["G.S. 95-136", "Inspection authority: entry without delay at reasonable times on presentation of credentials"],
+      ["G.S. 95-137", "Issuance of citations after inspection or investigation"],
+      ["G.S. 95-241(a)(1)b.", "Retaliation for a safety complaint or inspection request is prohibited under REDA"],
+      ["29 C.F.R. § 1904.1", "Employers with 10 or fewer employees at all times in the prior year are exempt from routine injury and illness logs, but must still report fatalities and in-patient hospitalizations"]
+    ] },
+    { "type": "list", "items": [
+      "Employers are entitled to contest citations, penalties and abatement periods under G.S. 95-137, and to seek variances from standards under G.S. 95-132.",
+      "The Article's stated enforcement policy includes a prohibition on advance notice of inspections (G.S. 95-126(b)(2)g.).",
+      "Injury and illness recordkeeping is size-based; the duty to report a workplace death or in-patient hospitalization applies to every covered employer.",
+      "Whether a hazard is recognized is judged by the industry and the employer's own knowledge; a hazard that is discussed in the employer's own safety meetings is recognized."
+    ] },
+    { "type": "trap", "text": "The common mistake is a small employer treating the recordkeeping exemption as a safety exemption. Ten or fewer employees means no routine OSHA 300 log; it does not remove the general duty under G.S. 95-129(1), the standards duty under G.S. 95-129(2), the duty to report a fatality or hospitalization, or the exposure to a REDA claim when an employee who asked for an inspection is let go." },
+    { "type": "prose", "text": "This is training, not legal advice." }
+  ],
+  "citations": [
+    { "authority": "N.C. Gen. Stat. § 95-126 (Occupational Safety and Health Act of North Carolina: short title and purpose)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-126.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-129 (rights and duties of employers)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-129.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-130 (rights and duties of employees)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-130.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-136 (inspections) and § 95-137 (issuance of citations)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-136.html", "verified_on": "2026-09-17" },
+    { "authority": "29 U.S.C. § 652(5) (OSH Act definition of employer)", "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title29-section652&num=0&edition=prelim", "verified_on": "2026-09-17" },
+    { "authority": "29 C.F.R. § 1904.1 (partial exemption for employers with 10 or fewer employees)", "url": "https://www.ecfr.gov/current/title-29/section-1904.1", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-241(a)(1)b. (REDA protection for Article 16 activity)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-241.html", "verified_on": "2026-09-17" }
+  ]
+}

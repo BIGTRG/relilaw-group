@@ -1,0 +1,34 @@
+{
+  "module": 2,
+  "position": 6,
+  "title": "Overtime, the workweek and exemptions",
+  "summary": "Time and one half after 40 hours, the fixed 168-hour workweek, and why a salary alone never makes an employee exempt.",
+  "est_minutes": 10,
+  "blocks": [
+    { "type": "prose", "text": "North Carolina requires every employer to pay an employee who works longer than 40 hours in any workweek at not less than one and one half times the employee's regular rate for the hours over 40. The FLSA states the same rule for covered employers. A workweek is any fixed and regularly recurring period of 168 consecutive hours; the employer chooses when it begins, and it does not have to match the calendar week or the pay period." },
+    { "type": "prose", "text": "North Carolina has no daily overtime rule and no rule requiring premium pay for weekends or holidays as such. Overtime is measured week by week; hours cannot be averaged across two weeks in a bi-weekly pay period, because the statute measures the 40-hour threshold in a single workweek." },
+    { "type": "list", "items": [
+      "The Wage and Hour Act exempts from minimum wage and overtime any person employed in a bona fide executive, administrative, professional or outside sales capacity as defined under the FLSA (G.S. 95-25.14(b)(4)), so the federal duties tests and salary level govern in North Carolina.",
+      "Under the federal regulation in force on the verification date, the standard salary level for the executive, administrative and professional exemptions is $684 per week (29 C.F.R. § 541.600). The 2024 rule that would have raised it was vacated; see the attorney review item on this point.",
+      "Computer systems analysts, programmers and software engineers as defined in the FLSA are exempt under G.S. 95-25.14(b)(7); certain drivers, mechanics, seamen, dealership sales staff and seasonal amusement employees are exempt from overtime only (G.S. 95-25.14(c)).",
+      "Where an FLSA exemption provides an alternative method of computing overtime, North Carolina applies that alternative rather than G.S. 95-25.4(a) (G.S. 95-25.14(a)(1)c.)."
+    ] },
+    { "type": "table", "head": ["Situation", "Overtime owed in North Carolina"], "rows": [
+      ["Hourly employee works 45 hours in week 1 and 35 in week 2 of a bi-weekly period", "Five hours at time and one half for week 1; averaging is not permitted"],
+      ["Salaried office coordinator paid $700 per week whose primary duty is routine data entry", "Yes. Salary above $684 is necessary but not sufficient; the duties test is not met"],
+      ["Salaried store manager paid $900 per week who directs two or more full-time employees and has hiring authority", "Likely exempt as executive if all elements of the FLSA duties test are met"],
+      ["Employee works 8 hours on Saturday in a 38-hour week", "None; there is no daily or weekend premium under G.S. 95-25.4"]
+    ] },
+    { "type": "trap", "text": "The common mistake is calling an employee exempt because the position is paid a salary and carries a title such as coordinator, lead or assistant manager. Salary is one element. The FLSA duties test is the rest, and North Carolina adopts it by reference in G.S. 95-25.14(b)(4). Two years of unpaid overtime for a misclassified employee, doubled as liquidated damages under G.S. 95-25.22 unless the employer proves good faith, is the ordinary result." },
+    { "type": "prose", "text": "This is training, not legal advice." }
+  ],
+  "citations": [
+    { "authority": "N.C. Gen. Stat. § 95-25.4 (overtime)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.4.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-25.2(17) (workweek: 168 consecutive hours)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.2.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-25.14 (exemptions)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.14.html", "verified_on": "2026-09-17" },
+    { "authority": "29 U.S.C. § 207(a)(1) (maximum hours; one and one half times the regular rate)", "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title29-section207&num=0&edition=prelim", "verified_on": "2026-09-17" },
+    { "authority": "29 U.S.C. § 213(a)(1) (executive, administrative, professional and outside sales exemption)", "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title29-section213&num=0&edition=prelim", "verified_on": "2026-09-17" },
+    { "authority": "29 C.F.R. § 541.600 (amount of salary required: $684 per week)", "url": "https://www.ecfr.gov/current/title-29/section-541.600", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-25.22 (recovery of unpaid wages; two-year limitation)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.22.html", "verified_on": "2026-09-17" }
+  ]
+}

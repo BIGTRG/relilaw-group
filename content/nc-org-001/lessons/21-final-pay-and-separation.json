@@ -1,0 +1,38 @@
+{
+  "module": 6,
+  "position": 21,
+  "title": "Final pay and the separation checklist",
+  "summary": "The next-regular-payday rule, when commissions and bonuses fall due, what may come out of the last check, and the notices that follow a separation.",
+  "est_minutes": 10,
+  "blocks": [
+    { "type": "prose", "text": "An employee whose employment ends for any reason must be paid all wages due on or before the next regular payday, through the regular pay channels or by trackable mail if the employee requests that in writing. Wages based on bonuses, commissions or other calculations are due on the first regular payday after the amount becomes calculable. Those amounts may be forfeited only if the employee was notified, under G.S. 95-25.13, of the policy or practice that produces the forfeiture; an employee who was not notified is not subject to it. The employer does not choose the timeline and may not hold the check pending return of property or signature of a release." },
+    { "type": "prose", "text": "Where wages are in dispute, the employer must pay the undisputed portion on time and without condition, and any release demanded as a condition of partial payment is void. Deductions from the final check follow the same rules as any other paycheck under G.S. 95-25.8, with one relaxation: the seven-day advance notice for cash or inventory shortage or property damage is not required when a separation occurs. Every other element still applies, including the signed authorization, the advance written notice of the amount, the right to withdraw, and the bar on touching overtime wages." },
+    { "type": "table", "head": ["Separation task", "Deadline", "Source"], "rows": [
+      ["Pay all wages due, including accrued vacation owed under policy", "On or before the next regular payday", "G.S. 95-25.7; 95-25.2(16); 95-25.12"],
+      ["Pay commissions and bonuses", "First regular payday after the amount becomes calculable", "G.S. 95-25.7"],
+      ["Pay undisputed wages where an amount is contested", "Within the same time, without condition", "G.S. 95-25.7A"],
+      ["Deduct for unreturned equipment or shortage", "Only with a compliant G.S. 95-25.8 authorization and notices; seven-day shortage notice waived at separation", "G.S. 95-25.8(a), (b), (c)"],
+      ["Respond to the Division of Employment Security if a claim is filed", "10 days from the claim filing date", "N.C. DES, Responding to Unemployment Claims"],
+      ["COBRA election notice (plans of employers with 20 or more employees)", "Per the plan's COBRA procedures after the qualifying event", "29 U.S.C. § 1161 et seq."],
+      ["Provide a truthful written reason for discharge if the former employee's prospective employer requests it", "On request", "G.S. 14-355 (safe harbor)"]
+    ] },
+    { "type": "list", "items": [
+      "Severance is a wage under G.S. 95-25.2(16) when the employer has a policy or practice of paying it; a severance agreement that pays extra in exchange for a release is lawful because the release is not a condition of wages already earned.",
+      "A final paycheck mailed at the employee's written request must go by trackable mail (G.S. 95-25.7).",
+      "Report separation pay, vacation payout and bonuses in the response to the Division of Employment Security; they can affect the claimant's benefits.",
+      "Unpaid final wages carry interest, an equal amount as liquidated damages absent proof of good faith, and attorneys' fees (G.S. 95-25.22)."
+    ] },
+    { "type": "trap", "text": "The common mistake is holding the final paycheck until the laptop comes back or the separation agreement is signed. G.S. 95-25.7 sets the deadline at the next regular payday with no exception for property or paperwork, G.S. 95-25.7A voids a release demanded as a condition of payment, and a deduction for the laptop without a compliant G.S. 95-25.8 authorization is itself an unpaid wage. The employer's remedy for the laptop is a civil claim, which G.S. 95-25.8(g) preserves." },
+    { "type": "prose", "text": "This is training, not legal advice." }
+  ],
+  "citations": [
+    { "authority": "N.C. Gen. Stat. § 95-25.7 (payment to separated employees)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.7.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-25.7A (wages in dispute; conditional release void)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.7A.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-25.8 (withholding of wages; seven-day notice waived at separation)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.8.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-25.2(16) (wage includes vacation, severance, commissions and bonuses under a policy or practice)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.2.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-25.22 (recovery of unpaid wages; liquidated damages)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.22.html", "verified_on": "2026-09-17" },
+    { "authority": "29 U.S.C. § 1161 (COBRA continuation coverage)", "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title29-section1161&num=0&edition=prelim", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Division of Employment Security, Responding to Unemployment Claims", "url": "https://www.des.nc.gov/responding-unemployment-claims", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 14-355 (blacklisting; truthful statement of reason for discharge)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_14/GS_14-355.html", "verified_on": "2026-09-17" }
+  ]
+}

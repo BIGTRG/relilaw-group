@@ -1,0 +1,35 @@
+{
+  "module": 2,
+  "position": 5,
+  "title": "Minimum wage and tipped employees",
+  "summary": "The North Carolina minimum wage floor, how it tracks the federal rate, and the conditions for taking a tip credit.",
+  "est_minutes": 9,
+  "blocks": [
+    { "type": "prose", "text": "The North Carolina minimum wage is the higher of $6.15 per hour or the federal minimum wage under section 6(a)(1) of the Fair Labor Standards Act as it changes from time to time. The federal rate has been $7.25 per hour since 2009, so $7.25 is the operative floor in North Carolina. The Wage and Hour Act also preempts local minimum wage ordinances: a city or county may set wages only for its own employees." },
+    { "type": "prose", "text": "Tips may be counted toward the minimum wage only up to the amount the FLSA permits under 29 U.S.C. § 203(m), and only if three conditions are met: the tipped employee is notified in advance, the employee is permitted to retain all tips, and the employer keeps accurate and complete records of tips as certified by the employee monthly or each pay period. Under the federal regulation the required cash wage is $2.13 per hour, with the tip credit making up the difference to $7.25; the credit can never exceed the tips actually received." },
+    { "type": "table", "head": ["Point", "North Carolina (G.S. 95-25.3)", "Federal (29 U.S.C. §§ 203, 206)"], "rows": [
+      ["Minimum wage", "Greater of $6.15 or the federal rate; currently $7.25", "$7.25 per hour"],
+      ["Tipped employee", "Customarily receives more than $20 a month in tips (G.S. 95-25.2(14))", "Customarily and regularly receives more than $30 a month in tips (29 U.S.C. § 203(t))"],
+      ["Tip credit", "Up to the amount permitted by 29 U.S.C. § 203(m), with advance notice, retention of tips and certified records", "Cash wage of at least $2.13; credit limited to tips actually received (29 C.F.R. § 531.59)"],
+      ["Tip pooling", "Permitted among employees who customarily and regularly receive tips; no employee's tips reduced by more than 15% (G.S. 95-25.3(f))", "Permitted subject to § 203(m)(2)"],
+      ["Sub-minimum rates", "90% for full-time students, learners, apprentices and messengers; Commissioner may set others by regulation", "Youth and other special rates under § 206(g) and § 214"]
+    ] },
+    { "type": "list", "items": [
+      "Advance notice of the tip credit is a condition, not a courtesy; without it the employer owes the full $7.25 cash wage for every hour.",
+      "The employee must be allowed to keep all tips, except a lawful pool; management and back-of-house staff who do not customarily receive tips cannot share the pool.",
+      "If the employee refuses to certify tips, the credit survives only if the employer meets the other conditions and can show by monitoring that the tips regularly reach the amount credited (G.S. 95-25.3(f)).",
+      "The Wage and Hour Act's minimum wage applies to State and local government employees as well; most other provisions of the Act do not (G.S. 95-25.14(d))."
+    ] },
+    { "type": "trap", "text": "The common mistake is a tip pool that includes a shift lead who spends most of the shift supervising, or a percentage that quietly takes more than 15% of a server's tips. Either one breaks the statutory conditions in G.S. 95-25.3(f), and when the conditions break the tip credit disappears for the affected pay periods: the employer owes the difference between $2.13 and $7.25 for every hour worked, plus liquidated damages under G.S. 95-25.22 unless it proves good faith." },
+    { "type": "prose", "text": "This is training, not legal advice." }
+  ],
+  "citations": [
+    { "authority": "N.C. Gen. Stat. § 95-25.3 (minimum wage; tip credit; tip pooling)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.3.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-25.2(14), (15) (tipped employee; tip)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.2.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-25.1(d) (local government wage ordinances preempted)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.1.html", "verified_on": "2026-09-17" },
+    { "authority": "29 U.S.C. § 206(a)(1)(C) (federal minimum wage $7.25)", "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title29-section206&num=0&edition=prelim", "verified_on": "2026-09-17" },
+    { "authority": "29 U.S.C. § 203(m)(2)(A), (t) (tip credit; tipped employee)", "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title29-section203&num=0&edition=prelim", "verified_on": "2026-09-17" },
+    { "authority": "29 C.F.R. § 531.59 (the tip wage credit; $2.13 cash wage)", "url": "https://www.ecfr.gov/current/title-29/section-531.59", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 95-25.22 (recovery of unpaid wages; liquidated damages)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.22.html", "verified_on": "2026-09-17" }
+  ]
+}

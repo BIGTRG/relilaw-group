@@ -1,0 +1,35 @@
+{
+  "module": 4,
+  "position": 15,
+  "title": "Youth employment: certificates, hours and prohibited work",
+  "summary": "The Youth Employment Certificate every worker under 18 needs, the hour limits for 14- and 15-year-olds, the school-night rule and the alcohol-premises restrictions.",
+  "est_minutes": 10,
+  "blocks": [
+    { "type": "prose", "text": "No youth under 18 may be employed in any occupation in North Carolina without a Youth Employment Certificate unless specifically exempted. The Department of Labor issues certificates through an online process that the employer must begin; the youth and the parent or guardian then sign electronically, and the certificate must be complete before the first day of work. The certificate requirement applies even to employers otherwise covered by the FLSA child labor rules, as do the school-night rule, the Commissioner's detrimental-occupation findings and the alcohol-premises restrictions." },
+    { "type": "prose", "text": "Hazardous occupations declared by the U.S. Department of Labor and occupations the Commissioner finds detrimental are closed to anyone under 18. Youths 14 and 15 may work only in occupations the federal Department of Labor permits, and only within the hour limits below. Youths 13 and under may not be employed, except that 12- and 13-year-olds may deliver newspapers outside school hours for up to three hours a day." },
+    { "type": "table", "head": ["Rule (G.S. 95-25.5)", "Limit"], "rows": [
+      ["Under 18: certificate", "Required before the first day of work unless exempt (subsection (a))"],
+      ["Under 18 enrolled in grade 12 or lower: school nights during the school term", "No work between 11 p.m. and 5 a.m. when there is school the next day; 16- and 17-year-olds may with written approval from the parent or guardian and the principal (subsection (a1))"],
+      ["Ages 14 and 15: hours", "3 hours on a school day; 8 hours on a non-school day; 18 hours in a school week; 40 hours in a non-school week; only outside school hours (subsection (c))"],
+      ["Ages 14 and 15: time of day", "7 a.m. to 7 p.m., extended to 9 p.m. during the summer when school is not in session (subsection (c)(3))"],
+      ["Under 16: breaks", "At least 30 minutes after five consecutive hours of work (subsection (e))"],
+      ["Under 18 at premises with an on-premises ABC permit", "May not prepare, serve, dispense or sell alcoholic beverages, except point-of-sale for off-premises consumption; under 15 may not work on the premises except 14-year-olds outside, with parental consent, away from alcohol (subsection (j))"],
+      ["Under 18 employed by a parent or guardian", "Exempt except for the certificate, the hazardous-occupation ban and the alcohol rules (subsection (i))"]
+    ] },
+    { "type": "list", "items": [
+      "The FLSA separately prohibits oppressive child labor in covered enterprises (29 U.S.C. § 212(c), § 203(l)); the federal hazardous-occupation orders define the closed jobs for 16- and 17-year-olds.",
+      "The Commissioner may waive hour provisions for a youth 13 or older in a documented hardship, with written parental consent and a finding that health and safety are not affected (G.S. 95-25.5(f)).",
+      "A youth with a valid North Carolina driver's license may drive a vehicle up to 6,000 pounds within 25 miles of the principal place of employment after a State-approved driver-education course, but not tow (G.S. 95-25.5(l)).",
+      "Effective October 1, 2026, a new subsection (o) permits qualified youths under 18 to volunteer at ski areas without compensation (S.L. 2026-49); it is listed for attorney review."
+    ] },
+    { "type": "trap", "text": "The common mistake is letting a 16-year-old start a summer job while the certificate application is still pending, on the theory that 16- and 17-year-olds have no hour limits. The hour limits ease at 16; the certificate does not. G.S. 95-25.5(a) prohibits employing any youth under 18 without the certificate, the Department of Labor's process requires all three signatures before the first day of work, and the employer is the party that must start it." },
+    { "type": "prose", "text": "This is training, not legal advice." }
+  ],
+  "citations": [
+    { "authority": "N.C. Gen. Stat. § 95-25.5 (youth employment)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.5.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Department of Labor, Youth Employment Certificate (employer-initiated online process; signatures before first day of work)", "url": "https://www.labor.nc.gov/workplace-rights/youth-employment-rules/apply-youth-employment-certificate", "verified_on": "2026-09-17" },
+    { "authority": "29 U.S.C. § 212(c) (FLSA child labor prohibition)", "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title29-section212&num=0&edition=prelim", "verified_on": "2026-09-17" },
+    { "authority": "29 U.S.C. § 203(l) (oppressive child labor defined)", "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title29-section203&num=0&edition=prelim", "verified_on": "2026-09-17" },
+    { "authority": "S.L. 2026-49 (SB 648), s. 1(b) (new G.S. 95-25.5(o), effective October 1, 2026)", "url": "https://www.ncleg.gov/EnactedLegislation/SessionLaws/HTML/2025-2026/SL2026-49.html", "verified_on": "2026-09-17" }
+  ]
+}

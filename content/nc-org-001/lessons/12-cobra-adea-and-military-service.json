@@ -1,0 +1,35 @@
+{
+  "module": 3,
+  "position": 12,
+  "title": "COBRA, the ADEA and protection for military service",
+  "summary": "Health continuation at 20 employees, age discrimination at 20, and the federal and state rules that protect service members' jobs.",
+  "est_minutes": 8,
+  "blocks": [
+    { "type": "prose", "text": "Federal COBRA requires a group health plan to offer continuation coverage to qualified beneficiaries after a qualifying event such as termination or reduction in hours. The requirement does not apply to a plan for a calendar year if all employers maintaining the plan normally employed fewer than 20 employees on a typical business day during the preceding calendar year. Whether a smaller North Carolina employer's insured plan carries a state continuation right under the insurance code is listed for attorney review; this lesson states only the federal rule." },
+    { "type": "prose", "text": "The Age Discrimination in Employment Act protects employees 40 and older and applies to employers with 20 or more employees for each working day in 20 or more calendar weeks in the current or preceding year. North Carolina's Equal Employment Practices Act lists age among the protected categories in its policy declaration for employers regularly employing 15 or more, but that section is a policy statement; the enforceable federal claim starts at 20." },
+    { "type": "table", "head": ["Protection", "Source", "What it requires"], "rows": [
+      ["Uniformed service: no discrimination in hiring, retention, promotion or benefits", "38 U.S.C. § 4311 (USERRA)", "Applies to every employer regardless of size"],
+      ["Reemployment after service", "38 U.S.C. § 4312", "Advance notice by the service member, cumulative absence not over five years, timely application for reemployment"],
+      ["State military: no discrimination for membership or service", "G.S. 127B-11", "No person may prejudice or injure a member of the State or U.S. military forces in employment because of membership or service"],
+      ["State military: no discharge for emergency duty", "G.S. 127B-14", "No employer may discharge a person for performing emergency military duty"],
+      ["Penalty under Chapter 127B", "G.S. 127B-15", "Class 2 misdemeanor; each violation a separate offense"]
+    ] },
+    { "type": "list", "items": [
+      "USERRA has no employee-count threshold; a two-person business must reemploy a returning reservist who meets the statutory conditions.",
+      "COBRA's 20-employee test looks at the preceding calendar year, so an employer that grew past 20 in the current year may still be outside COBRA until the next plan year.",
+      "The ADEA count uses the same 20-calendar-week method as Title VII and the ADA, but the number is 20, not 15.",
+      "North Carolina's Chapter 127B applies to National Guard and other State military forces as well as U.S. forces, and its penalty is criminal."
+    ] },
+    { "type": "trap", "text": "The common mistake is a small employer scheduling a National Guard member out of the rotation, or passing over the member for a lead role, because weekend drills make scheduling hard. USERRA § 4311 prohibits denying promotion or any benefit of employment on the basis of service obligations regardless of the employer's size, and G.S. 127B-11 makes the same conduct a state offense. Scheduling inconvenience is not a defense under either statute." },
+    { "type": "prose", "text": "This is training, not legal advice." }
+  ],
+  "citations": [
+    { "authority": "29 U.S.C. § 1161 (COBRA continuation coverage; exception for employers with fewer than 20 employees)", "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title29-section1161&num=0&edition=prelim", "verified_on": "2026-09-17" },
+    { "authority": "29 U.S.C. § 630(b) (ADEA employer: twenty or more employees)", "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title29-section630&num=0&edition=prelim", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 143-422.2 (Equal Employment Practices Act policy declaration, including age)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_143/GS_143-422.2.html", "verified_on": "2026-09-17" },
+    { "authority": "38 U.S.C. § 4311 (USERRA: discrimination against persons who serve prohibited)", "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title38-section4311&num=0&edition=prelim", "verified_on": "2026-09-17" },
+    { "authority": "38 U.S.C. § 4312 (USERRA: reemployment rights)", "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title38-section4312&num=0&edition=prelim", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 127B-11 (private discrimination against military members prohibited)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_127B/GS_127B-11.html", "verified_on": "2026-09-17" },
+    { "authority": "N.C. Gen. Stat. § 127B-14 (discharge for emergency military duty prohibited) and § 127B-15 (penalties)", "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_127B/GS_127B-14.html", "verified_on": "2026-09-17" }
+  ]
+}

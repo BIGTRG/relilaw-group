@@ -1,0 +1,147 @@
+{
+  "title": "NC-ORG-001 · Orange Belt assessment",
+  "pass_percent": 80,
+  "max_attempts": 3,
+  "status": "draft",
+  "scoring_note": "Constructed items are scored by element. Each model element is worth one point; points equals the number of elements. The grader awards one point per element the response demonstrates and reports the missed elements with the governing citation. The Core stores model elements in answer_key and never returns them to the learner.",
+  "items": [
+    {
+      "position": 1,
+      "kind": "constructed",
+      "points": 4,
+      "prompt": [
+        { "type": "prose", "text": "A retail employer in Charlotte wants to deduct $180 from a cashier's next paycheck for a register shortage. The cashier signed a general acknowledgment at hire agreeing that shortages may be deducted. The cashier worked 46 hours this week at $12 per hour. State what the employer must do for the deduction to be lawful under the Wage and Hour Act, and identify any limit on the amount." }
+      ],
+      "model_elements": [
+        { "element": "A signed written authorization is required, and because the amount was not known in advance it must state the reason and be signed on or before the payday; the general acknowledgment at hire does not meet the statute by itself.", "citation": "N.C. Gen. Stat. § 95-25.8(a)(3)" },
+        { "element": "Before the deduction the employee must receive advance written notice of the actual amount, written notice of the right to withdraw the authorization, and a reasonable opportunity to withdraw in writing.", "citation": "N.C. Gen. Stat. § 95-25.8(a)(3)" },
+        { "element": "For a cash shortage the employer must give written notice of the amount seven days before the payday on which the deduction is made (the seven-day notice is waived only at separation).", "citation": "N.C. Gen. Stat. § 95-25.8(c)" },
+        { "element": "In an overtime week the deduction may reduce wages only to the minimum wage for the 40 non-overtime hours and may not touch the six hours of overtime wages at all.", "citation": "N.C. Gen. Stat. § 95-25.8(b)(2), (3)" }
+      ]
+    },
+    {
+      "position": 2,
+      "kind": "constructed",
+      "points": 4,
+      "prompt": [
+        { "type": "prose", "text": "A Raleigh marketing agency has 22 employees on payroll, four of them part-time. An employee who is 44 years old and pregnant asks for a modified schedule during her third trimester and, separately, for 10 weeks off after the birth. The owner says the company is too small for any of that to apply. Identify which federal and North Carolina statutes apply to this employer at this size, and what each requires of the owner's response." }
+      ],
+      "model_elements": [
+        { "element": "Title VII and the ADA apply at 15 or more employees counted by the payroll method for each working day in 20 or more calendar weeks; part-time employees count, so 22 is over the threshold.", "citation": "42 U.S.C. § 2000e(b); 42 U.S.C. § 12111(5)" },
+        { "element": "The Pregnant Workers Fairness Act applies at 15 employees and requires reasonable accommodation of the known limitation (the modified schedule and recovery time) absent undue hardship; refusing to engage is the violation.", "citation": "42 U.S.C. § 2000gg(2), (4)" },
+        { "element": "The FMLA does not apply because the employer has fewer than 50 employees, so there is no 12-week job-protected leave entitlement under federal law and North Carolina has no state family leave statute.", "citation": "29 U.S.C. § 2611(4)" },
+        { "element": "The ADEA applies at 20 or more employees, so the employee's age is also a protected characteristic in any decision about her schedule or continued employment.", "citation": "29 U.S.C. § 630(b)" }
+      ]
+    },
+    {
+      "position": 3,
+      "kind": "constructed",
+      "points": 4,
+      "prompt": [
+        { "type": "prose", "text": "A warehouse employee reports a back injury, files a workers' compensation claim, and three weeks later is terminated for attendance. The attendance write-ups in the file are all dated after the injury report. Describe the employee's likely North Carolina claim, its procedural steps and deadlines, the employer's available defense and what evidence carries it, and the damages exposure." }
+      ],
+      "model_elements": [
+        { "element": "The claim is retaliation under the Retaliatory Employment Discrimination Act: filing a workers' compensation claim is protected activity and discharge is a retaliatory action.", "citation": "N.C. Gen. Stat. § 95-241(a)(1)a.; § 95-240(2)" },
+        { "element": "The employee must file a complaint with the Commissioner of Labor within 180 days of the discharge, and may sue in superior court only after a right-to-sue letter, within 90 days of its issuance.", "citation": "N.C. Gen. Stat. § 95-242(a); § 95-243(b), (e)" },
+        { "element": "The employer's defense is the same-decision defense: proving by the greater weight of the evidence that it would have terminated the employee absent the claim, which requires discipline records that predate the protected activity; write-ups dated after the injury report do not carry it.", "citation": "N.C. Gen. Stat. § 95-241(b)" },
+        { "element": "Remedies include reinstatement, lost wages and benefits, and attorneys' fees, with economic damages trebled if the violation was willful.", "citation": "N.C. Gen. Stat. § 95-243(c)" }
+      ]
+    },
+    {
+      "position": 4,
+      "kind": "constructed",
+      "points": 4,
+      "prompt": [
+        { "type": "prose", "text": "A restaurant with an on-premises ABC permit wants to hire a 16-year-old as a host for the summer, starting Monday. The certificate application has been started but not signed by the parent. During the school year the restaurant wants the host to close at midnight on Thursdays. State the youth employment rules that govern this hire." }
+      ],
+      "model_elements": [
+        { "element": "A Youth Employment Certificate is required before the first day of work for any youth under 18; the Department of Labor's process requires the employer to start it and the youth, parent or guardian and employer to sign electronically before work begins.", "citation": "N.C. Gen. Stat. § 95-25.5(a); N.C. Department of Labor, Youth Employment Certificate" },
+        { "element": "During the school term a youth enrolled in grade 12 or lower may not work between 11 p.m. and 5 a.m. when there is school the next day; a 16- or 17-year-old may do so only with written approval from the parent or guardian and the principal or designee.", "citation": "N.C. Gen. Stat. § 95-25.5(a1)" },
+        { "element": "At premises with an on-premises ABC permit a youth under 18 may not prepare, serve, dispense or sell alcoholic beverages, so the host may not handle drink service.", "citation": "N.C. Gen. Stat. § 95-25.5(j)(2)" },
+        { "element": "Because the restaurant is likely FLSA-covered, the state hour limits for 14- and 15-year-olds do not apply to this 16-year-old, but the certificate, school-night, detrimental-occupation and alcohol rules still apply, and federal hazardous-occupation orders remain in force.", "citation": "N.C. Gen. Stat. § 95-25.5(k); 29 U.S.C. § 212(c)" }
+      ]
+    },
+    {
+      "position": 5,
+      "kind": "constructed",
+      "points": 3,
+      "prompt": [
+        { "type": "prose", "text": "A salesperson resigns effective Friday. She is owed base pay through Friday, commissions on two deals that will not close until next month, and 40 hours of accrued vacation. The handbook, revised last year and posted on the intranet, says vacation is forfeited on resignation. She has not returned her company phone and asks that her check be mailed. State when each amount is due and whether any of it may be withheld." }
+      ],
+      "model_elements": [
+        { "element": "Base pay and any vacation owed are due on or before the next regular payday; if she requested mailing in writing the check goes by trackable mail. The phone is not a basis for holding the check; the employer's remedy is a compliant deduction under § 95-25.8 or a civil claim.", "citation": "N.C. Gen. Stat. § 95-25.7; § 95-25.8(g)" },
+        { "element": "Commissions are due on the first regular payday after each amount becomes calculable, so they are payable after the deals close, not on the final payday.", "citation": "N.C. Gen. Stat. § 95-25.7" },
+        { "element": "Accrued vacation is a promised wage; forfeiture applies only if the employee was notified of the forfeiture policy in writing or by posted notice under § 95-25.13, so the employer must be able to show the posted or communicated policy or the vacation is owed.", "citation": "N.C. Gen. Stat. § 95-25.12; § 95-25.2(16); § 95-25.7" }
+      ]
+    },
+    {
+      "position": 6,
+      "kind": "constructed",
+      "points": 3,
+      "prompt": [
+        { "type": "prose", "text": "A landscaping company has two working owners on payroll and hires its first two field employees, both of whom are 17 and both of whom will live in the State year-round. Identify the North Carolina coverage duties that switch on for this employer at this headcount and the ones that do not yet apply." }
+      ],
+      "model_elements": [
+        { "element": "Workers' compensation coverage is required: with the two owners counted as employees the company has three or more regularly employed and must insure or self-insure and post the notice; failing to insure carries a daily penalty.", "citation": "N.C. Gen. Stat. § 97-2(1); § 97-93; § 97-94(b1)" },
+        { "element": "Both 17-year-olds need Youth Employment Certificates before their first day, and the hazardous-occupation ban applies to power-driven equipment the federal orders declare hazardous.", "citation": "N.C. Gen. Stat. § 95-25.5(a), (b)" },
+        { "element": "State E-Verify does not apply below 25 employees, though Form I-9 is required for every hire, and the lawful-products statute applies at three regularly employed employees.", "citation": "N.C. Gen. Stat. § 64-25(4); 8 U.S.C. § 1324a(b); N.C. Gen. Stat. § 95-28.2(a)" }
+      ]
+    },
+    {
+      "position": 7,
+      "kind": "single",
+      "points": 1,
+      "prompt": [ { "type": "prose", "text": "Under the North Carolina Wage and Hour Act, written notice of a reduction in an employee's promised wage rate must be given:" } ],
+      "options": [
+        { "id": "a", "text": "At least one pay period before the change takes effect" },
+        { "id": "b", "text": "Within 30 days after the change" },
+        { "id": "c", "text": "Only if the employee asks" },
+        { "id": "d", "text": "At least 90 days before the change" }
+      ],
+      "answer_key": ["a"],
+      "citation": "N.C. Gen. Stat. § 95-25.13(3)"
+    },
+    {
+      "position": 8,
+      "kind": "multi",
+      "points": 2,
+      "prompt": [ { "type": "prose", "text": "Which of the following are conditions for a North Carolina employer to count tips toward the minimum wage? Select all that apply." } ],
+      "options": [
+        { "id": "a", "text": "The tipped employee is notified in advance" },
+        { "id": "b", "text": "The employee is permitted to retain all tips, subject to a lawful tip pool" },
+        { "id": "c", "text": "The employer keeps accurate records of tips certified by the employee monthly or each pay period" },
+        { "id": "d", "text": "The employee earns at least $500 per week in tips" }
+      ],
+      "answer_key": ["a", "b", "c"],
+      "citation": "N.C. Gen. Stat. § 95-25.3(f)"
+    },
+    {
+      "position": 9,
+      "kind": "single",
+      "points": 1,
+      "prompt": [ { "type": "prose", "text": "A former employee's prospective employer calls for a reference. Under North Carolina's blacklisting statute, which response is within the statutory safe harbor?" } ],
+      "options": [
+        { "id": "a", "text": "A truthful written statement of the reason for discharge, furnished on request" },
+        { "id": "b", "text": "A verbal warning not to hire the person, offered without being asked" },
+        { "id": "c", "text": "A written statement that the person was dishonest, when the file shows a layoff" },
+        { "id": "d", "text": "Any statement, because at-will employment permits it" }
+      ],
+      "answer_key": ["a"],
+      "citation": "N.C. Gen. Stat. § 14-355"
+    },
+    {
+      "position": 10,
+      "kind": "single",
+      "points": 1,
+      "prompt": [ { "type": "prose", "text": "An employer receives a Request for Separation Information from the Division of Employment Security. How long does it have to respond?" } ],
+      "options": [
+        { "id": "a", "text": "10 days from the date the claim was filed" },
+        { "id": "b", "text": "30 days from receipt" },
+        { "id": "c", "text": "There is no deadline" },
+        { "id": "d", "text": "48 hours" }
+      ],
+      "answer_key": ["a"],
+      "citation": "N.C. Division of Employment Security, Responding to Unemployment Claims"
+    }
+  ]
+}
