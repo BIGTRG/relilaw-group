@@ -132,7 +132,7 @@ test('webhook: signature is verified with the real Stripe scheme; bad secret, ta
 
 // ---- webhook: fulfilment, idempotency (spec test 7) --------------------------
 
-test('spec test 7: the same checkout.session.completed delivered twice grants exactly ONE entitlement, one Core enrolment, one receipt + one confirmation', async () => {
+test('SPEC TEST 7: a duplicated Stripe webhook (same checkout.session.completed delivered twice, then a parallel storm) grants exactly ONE entitlement, one Core enrolment, one receipt + one confirmation', async () => {
   const transport = createMemoryTransport();
   const mail = createMailer({ db: app, transport, from: 'RELI <reli@example.test>' });
   const { event } = signedEvent('checkout.session.completed', checkoutSession(user.id));
@@ -213,7 +213,7 @@ test('a processing failure rolls the ledger row back so Stripe\'s retry is proce
 
 // ---- webhook: refunds and disputes (spec test 8) ------------------------------
 
-test('spec test 8: a full refund revokes the entitlement through the one path; access is gone on the next check; partial refunds do not revoke', async () => {
+test('SPEC TEST 8: a full refund revokes the entitlement through the one path; the very next learner request (course view, lesson completion, attempt start) is denied; partial refunds do not revoke', async () => {
   const key = 'course:NC-ORG-001';
   assert.equal(await hasEntitlement(app, user.id, key), true);
   await redis.set(`ent:${user.id}:${key}`, '1'); // a warm cache entry must be dropped too
@@ -236,6 +236,23 @@ test('spec test 8: a full refund revokes the entitlement through the one path; a
   assert.equal(rows.rows[0].revoke_reason, 'refund:ch_test_1');
   // and the same refund event again is a duplicate, not a second revocation
   assert.equal((await handleStripeEvent({ db: app, redis, event: full })).status, 'duplicate');
+
+  // The next request through the learner paths the HTTP routes call
+  // (app/api/learn/* and the Dojo pages all go through these) is refused,
+  // even though the Core enrolment and the enrollment_link row still exist.
+  const { NotEntitledError } = await import('../src/lib/learning.mjs');
+  const links = await app.query('select core_enrollment_id from enrollment_link where user_id = $1', [user.id]);
+  assert.equal(links.rows.length, 1, 'the Core-side enrolment link is not what gates access');
+  const gated = createLearningService({ db: app, core: { ...core,
+    getCourse: async () => { throw new Error('the Core must not even be asked'); },
+    getLesson: async id => ({ id, course_id: COURSE, status: 'published' }),
+    getAssessment: async id => ({ id, course_id: COURSE }),
+    completeLesson: async () => { throw new Error('completion must not reach the Core'); },
+    startAttempt: async () => { throw new Error('attempt must not reach the Core'); } } });
+  await assert.rejects(() => gated.courseView(user, COURSE), NotEntitledError);
+  await assert.rejects(() => gated.completeLesson(user, '22222222-2222-4222-8222-222222222222'), NotEntitledError);
+  await assert.rejects(() => gated.startAssessment(user, '44444444-4444-4444-8444-444444444444'), NotEntitledError);
+  assert.equal((await gated.catalogue(user))[0].entitled, false, 'the Library shows it as purchasable again, never a live link for something owned');
 });
 
 test('a dispute revokes immediately (metadata path), and an unmatched dispute is audited, not thrown', async () => {

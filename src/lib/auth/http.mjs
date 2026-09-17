@@ -15,7 +15,7 @@ const PENDING_TTL_S = 300;
 const HOST_DOOR = { 'app.': 'dojo', 'studio.': 'studio', 'admin.': 'console' };
 
 export function doorFromHost(host) {
-  if (process.env.DOOR_OVERRIDE) return process.env.DOOR_OVERRIDE;
+  if (process.env.DOOR_OVERRIDE) return process.env.DOOR_OVERRIDE.replace(/^\//, ''); // middleware spells it /dojo
   const prefix = Object.keys(HOST_DOOR).find(p => host?.startsWith(p));
   return prefix ? HOST_DOOR[prefix] : null;
 }

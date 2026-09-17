@@ -1,5 +1,7 @@
 import { DoorBadge } from '@/components/DoorBadge';
 import { requireLearner, getLearning } from '@/lib/dojo.mjs';
+import { CoreUnavailableError } from '@/lib/learning.mjs';
+import { DegradedCallout } from '@/components/Degraded';
 
 export const dynamic = 'force-dynamic';
 const money = (cents, cur) => new Intl.NumberFormat('en-US', { style: 'currency', currency: cur.toUpperCase() }).format(cents / 100);
@@ -10,7 +12,17 @@ const money = (cents, cur) => new Intl.NumberFormat('en-US', { style: 'currency'
 export default async function Library({ searchParams }) {
   const { user } = await requireLearner('/library');
   const sp = (await searchParams) ?? {};
-  const items = await getLearning().catalogue(user);
+  // The catalogue itself is app data (product + entitlement); the Core is
+  // consulted only for enrolment state. If it is down the library still
+  // lists what the learner holds, with a legible notice instead of an error.
+  let items = [];
+  let degraded = false;
+  try {
+    items = await getLearning().catalogue(user);
+  } catch (e) {
+    if (!(e instanceof CoreUnavailableError)) throw e;
+    degraded = true;
+  }
   const justPurchased = sp.purchased === '1';
   const pending = justPurchased && items.some(p => !p.entitled); // webhook not landed yet
   return (
@@ -36,7 +48,10 @@ export default async function Library({ searchParams }) {
         <div className="callout callout-warn" role="alert">We couldn&apos;t open checkout just now. Nothing was charged. Please try again in a moment.</div>
       )}
 
-      {items.length === 0 && (
+      {degraded && (
+        <DegradedCallout what="The learning service is not answering right now, so the library cannot show course progress." />
+      )}
+      {items.length === 0 && !degraded && (
         <div className="empty">No courses are published yet.</div>
       )}
       {items.map(p => (
@@ -44,7 +59,7 @@ export default async function Library({ searchParams }) {
           <div className="card-row">
             <div>
               <p className="eyebrow">{p.code} · {p.rank_code} belt</p>
-              <h3 style={{ margin: 0 }}>{p.title}</h3>
+              <h2 className="h3" style={{ margin: 0 }}>{p.title}</h2>
             </div>
             {p.entitled ? (
               <div className="card-row" style={{ gap: 'var(--s3)' }}>

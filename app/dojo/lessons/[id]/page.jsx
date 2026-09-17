@@ -3,7 +3,7 @@ import { DoorBadge } from '@/components/DoorBadge';
 import { LessonBlock, Sources, citationView } from '@/components/LessonBlocks';
 import { requireLearner, getLearning } from '@/lib/dojo.mjs';
 import { NotEntitledError, CoreUnavailableError, CoreRequestError } from '@/lib/learning.mjs';
-import { Degraded } from '../../courses/[id]/page';
+import { Degraded } from '@/components/Degraded';
 
 export const dynamic = 'force-dynamic';
 

@@ -8,7 +8,7 @@
 .topbar-links a:hover { color: var(--text); }
 .syllabus { list-style: none; margin: 0; padding: 0; }
 .syllabus-module { margin-top: var(--s5); }
-.syllabus-module h3 { margin: 0 0 var(--s2); font-size: var(--t-md); color: var(--text-2); font-weight: 600; }
+.syllabus-module h2 { margin: 0 0 var(--s2); font-size: var(--t-md); color: var(--text-2); font-weight: 600; }
 .syllabus-lesson { display: flex; align-items: center; gap: var(--s3); padding: var(--s3) 0; border-bottom: 1px solid var(--line); }
 .syllabus-lesson:last-child { border-bottom: 0; }
 .syllabus-lesson .tick { flex: 0 0 20px; width: 20px; height: 20px; border-radius: 50%; border: 1.5px solid var(--line-firm); display: inline-flex; align-items: center; justify-content: center; }
@@ -16,7 +16,7 @@
 .syllabus-lesson.done .tick svg { width: 11px; height: 11px; }
 .syllabus-lesson a { color: var(--text); text-decoration: none; flex: 1; }
 .syllabus-lesson a:hover { color: var(--accent-text); }
-.syllabus-lesson .mins { font-family: var(--font-mono); font-size: var(--t-xs); color: var(--text-3); }
+.syllabus-lesson .mins { font-family: var(--font-mono); font-size: var(--t-xs); color: var(--text-2); }
 .lesson-nav { display: flex; justify-content: space-between; gap: var(--s3); align-items: center; margin-top: var(--s6); padding-top: var(--s5); border-top: 1px solid var(--line); flex-wrap: wrap; }
 .item { padding: var(--s5) 0; border-bottom: 1px solid var(--line); }
 .item:last-child { border-bottom: 0; }
@@ -25,3 +25,10 @@
 .option input { margin-top: 5px; accent-color: var(--accent); }
 .form-error { color: var(--risk); font-size: var(--t-sm); }
 .card-row { display: flex; justify-content: space-between; gap: var(--s4); align-items: center; flex-wrap: wrap; }
+.missed-elements { margin: 0; padding-left: var(--s5); }
+.missed-elements li { margin-bottom: var(--s2); }
+.missed-elements .cite-ref { display: inline; margin-left: var(--s1); }
+.element.pending .mark { background: var(--surface-2); color: var(--text-3); }
+.item-score { margin-top: var(--s2); }
+.signature p b { color: var(--text); }
+.theme-toggle { min-height: 24px; min-width: 24px; }

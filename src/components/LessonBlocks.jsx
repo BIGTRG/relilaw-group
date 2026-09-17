@@ -33,7 +33,7 @@ export function citationView(c, now = Date.now()) {
 export function Sources({ citations }) {
   return (
     <section className="sources" aria-label="Sources">
-      <h4>Sources — checked by a person</h4>
+      <h2 className="h4">Sources — checked by a person</h2>
       {citations.map((c, i) => (
         <div className="source" key={i}>
           <span className="src-name">

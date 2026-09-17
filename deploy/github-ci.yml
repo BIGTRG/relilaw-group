@@ -1,0 +1,39 @@
+name: ci
+
+# The 13 mandatory tests (spec section 13) run here, axe included. The
+# browser suite drives the BUILT app (node .next/standalone/server.js) against
+# embedded Postgres, a fake Redis and a scripted Core; no external service and
+# no secret is needed. A grep gate fails the build if a payment identifier
+# reaches an access path or the Core key reaches the client bundle.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Chromium for the axe suite
+        run: npx playwright install --with-deps chromium
+      - name: Build (standalone, what PM2 runs)
+        run: npx next build
+        env:
+          NEXT_TELEMETRY_DISABLED: '1'
+      - name: Unit, integration and browser suites (spec tests 1-13, axe both themes)
+        run: npm test
+        env:
+          NEXT_TELEMETRY_DISABLED: '1'
+      - name: Grep gates on source and build output (spec tests 5 and 6)
+        run: npm run test:grep

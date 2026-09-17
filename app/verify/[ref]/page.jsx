@@ -31,7 +31,7 @@ export default async function VerifyPage({ params }) {
       <div className="rank-rule" />
       <header className="verify-head">
         <p className="eyebrow">Credential verification</p>
-        <h1>{r.state === 'valid' ? 'This credential is valid.' : r.state === 'revoked' ? 'This credential has been revoked.' : r.state === 'paused' ? 'Verification is paused.' : 'No credential matches.'}</h1>
+        <h1>{r.state === 'valid' ? 'This credential is valid.' : r.state === 'revoked' ? 'This credential has been revoked.' : r.state === 'paused' ? 'We cannot verify this credential right now.' : 'No credential matches.'}</h1>
       </header>
 
       {r.state === 'valid' && (
@@ -63,20 +63,23 @@ export default async function VerifyPage({ params }) {
 
       {r.state === 'missing' && (
         <div className="empty">
-          <h4>No credential matches this reference</h4>
+          <h2 className="h4">No credential matches this reference</h2>
           <p>Check the reference code exactly as printed. References are case-sensitive and match exactly; a partial code returns nothing by design.</p>
         </div>
       )}
       {r.state === 'invalid' && (
         <div className="empty">
-          <h4>That does not look like a credential reference</h4>
+          <h2 className="h4">That does not look like a credential reference</h2>
           <p>References are 6 to 40 letters, digits and dashes.</p>
         </div>
       )}
       {r.state === 'paused' && (
-        <div className="empty">
-          <h4>The registry is not answering right now</h4>
-          <p>Try again in a minute. Nothing about the credential has changed.</p>
+        <div className="callout callout-warn" role="status" aria-live="polite" data-degraded="core">
+          <div className="callout-title">Cannot verify right now</div>
+          <p style={{ margin: 0 }}>
+            The credential registry is not answering, so this page can neither confirm nor deny
+            <span className="cite-ref" style={{ marginLeft: 'var(--s1)' }}>{ref}</span>. This is not a statement about the credential. Try again in a minute.
+          </p>
         </div>
       )}
     </div>

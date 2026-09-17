@@ -1,11 +1,13 @@
 import { DoorBadge } from '@/components/DoorBadge';
 import { Ladder } from '@/components/Ladder';
 import { requireLearner, getLearning, firstName } from '@/lib/dojo.mjs';
+import { DegradedCallout } from '@/components/Degraded';
 
 export const dynamic = 'force-dynamic';
 
-export default async function DojoHome() {
+export default async function DojoHome({ searchParams }) {
   const { user } = await requireLearner('/');
+  const sp = (await searchParams) ?? {};
   const home = await getLearning().home(user);
   const current = home.ranks.find(r => r.order === home.currentOrder);
 
@@ -14,9 +16,7 @@ export default async function DojoHome() {
       <div className="section-head">
         <DoorBadge door="dojo" />
         <h1>Welcome back, {firstName(user.display_name)}.</h1>
-        {home.degraded ? (
-          <p className="lede">Your progress is safe. The learning service is not answering right now, so ranks and lessons are paused. Try again in a minute.</p>
-        ) : current ? (
+        {home.degraded ? null : current ? (
           <p className="lede">
             You hold the <b>{current.name} Belt</b> in North Carolina employment law.
             {' '}{nextStepLine(home)}
@@ -26,6 +26,16 @@ export default async function DojoHome() {
         )}
       </div>
 
+      {home.degraded && (
+        <DegradedCallout what="The learning service is not answering right now, so your rank ladder and lessons are paused." />
+      )}
+      {!home.degraded && sp.paused === '1' && (
+        <DegradedCallout what="That last action did not reach the learning service." />
+      )}
+      {sp.notice && (
+        <div className="callout callout-info" role="status">{String(sp.notice).slice(0, 300)}</div>
+      )}
+
       {!home.degraded && home.ranks.length > 0 && (
         <section className="card" aria-label="Your rank ladder">
           <Ladder ranks={home.ranks} current={home.currentOrder} />
@@ -34,11 +44,11 @@ export default async function DojoHome() {
 
       {home.resume && (
         <section className="card card-tight">
-          <h3>Continue</h3>
+          <h2 className="h3">Continue</h2>
           {home.resume.lesson ? (
             <>
               <p className="muted">{home.resume.courseTitle} — {home.resume.lesson.title}</p>
-              <div className="progress" aria-label={`${home.resume.progress.percent_complete}% complete`}>
+              <div className="progress" role="progressbar" aria-label="Course progress" aria-valuemin={0} aria-valuemax={100} aria-valuenow={home.resume.progress.percent_complete}>
                 <i style={{ width: `${home.resume.progress.percent_complete}%` }} />
               </div>
               <p><a className="btn btn-primary" href={`/lessons/${home.resume.lesson.id}`}>Resume lesson</a></p>
@@ -57,7 +67,7 @@ export default async function DojoHome() {
 
       {!home.degraded && !home.resume && (
         <section className="card card-tight">
-          <h3>Your library</h3>
+          <h2 className="h3">Your library</h2>
           <p className="muted">
             {home.catalogue.some(c => c.entitled)
               ? 'You have finished everything you hold. New courses appear here when they are published and reviewed.'
@@ -69,11 +79,11 @@ export default async function DojoHome() {
 
       {home.credentials.length > 0 && (
         <section className="card card-tight">
-          <h3>Your credentials</h3>
+          <h2 className="h3">Your credentials</h2>
           <ul className="syllabus">
             {home.credentials.map(c => (
               <li className="syllabus-lesson done" key={c.public_ref}>
-                <span className="tick" aria-hidden="true">✓</span>
+                <span className="tick" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg></span>
                 <a href={`/verify/${c.public_ref}`}>{c.public_ref}</a>
                 <span className="mins">{new Date(c.issued_at).toISOString().slice(0, 10)}</span>
               </li>

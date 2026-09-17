@@ -3,7 +3,7 @@ import { DoorBadge } from '@/components/DoorBadge';
 import { LessonBlock } from '@/components/LessonBlocks';
 import { requireLearner, getLearning } from '@/lib/dojo.mjs';
 import { NotEntitledError, CoreUnavailableError, CoreRequestError } from '@/lib/learning.mjs';
-import { Degraded } from '../../courses/[id]/page';
+import { Degraded } from '@/components/Degraded';
 
 export const dynamic = 'force-dynamic';
 
@@ -47,7 +47,12 @@ export default async function Assess({ params }) {
                 <span>{op.text}</span>
               </label>
             ))}
-            {it.kind === 'constructed' && <textarea className="textarea" name={`item:${it.id}`} rows={4} />}
+            {it.kind === 'constructed' && (
+              <>
+                <label className="label" htmlFor={`answer-${it.id}`}>Your answer</label>
+                <textarea className="textarea" id={`answer-${it.id}`} name={`item:${it.id}`} rows={6} />
+              </>
+            )}
           </fieldset>
         ))}
         <div className="lesson-nav">

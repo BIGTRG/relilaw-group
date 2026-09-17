@@ -2,6 +2,8 @@ import { notFound } from 'next/navigation';
 import { DoorBadge } from '@/components/DoorBadge';
 import { requireLearner, getLearning } from '@/lib/dojo.mjs';
 import { NotEntitledError, CoreUnavailableError, CoreRequestError } from '@/lib/learning.mjs';
+import { Degraded } from '@/components/Degraded';
+import { ReviewStatus } from '@/components/ReviewStatus';
 
 export const dynamic = 'force-dynamic';
 
@@ -24,9 +26,11 @@ export default async function Course({ params }) {
         <DoorBadge door="dojo" />
         <h1>{v.course.title}</h1>
         {v.course.summary && <p className="lede">{v.course.summary}</p>}
-        <div className="progress" aria-label={`${pct}% complete`}><i style={{ width: `${pct}%` }} /></div>
+        <div className="progress" role="progressbar" aria-label="Course progress" aria-valuemin={0} aria-valuemax={100} aria-valuenow={pct}><i style={{ width: `${pct}%` }} /></div>
         <p className="muted">{v.progress.lessons_completed} of {v.progress.lessons_total} lessons complete</p>
       </div>
+
+      <ReviewStatus signature={v.signature} courseRef={v.product.code} />
 
       {v.next && (
         <p><a className="btn btn-primary" href={`/lessons/${v.next.id}`}>{v.progress.lessons_completed ? 'Resume' : 'Begin'}: {v.next.title}</a></p>
@@ -36,7 +40,7 @@ export default async function Course({ params }) {
         <ol className="syllabus">
           {v.modules.map(m => (
             <li className="syllabus-module" key={m.id}>
-              <h3>{m.title}</h3>
+              <h2 className="h3">{m.title}</h2>
               <ul className="syllabus">
                 {m.lessons.map(l => (
                   <li className={`syllabus-lesson${l.done ? ' done' : ''}`} key={l.id}>
@@ -55,7 +59,7 @@ export default async function Course({ params }) {
 
       {v.assessment && (
         <section className="card card-tight">
-          <h3>{v.assessment.title}</h3>
+          <h2 className="h3">{v.assessment.title}</h2>
           <p className="muted">Pass mark {v.assessment.pass_percent}%.{v.assessment.max_attempts ? ` Up to ${v.assessment.max_attempts} attempts.` : ''}{' '}
             {v.progress.complete ? 'Every lesson is complete; the assessment is open.' : 'Finish every lesson first.'}</p>
           <form method="post" action="/api/learn/attempts">
@@ -74,14 +78,6 @@ function Locked() {
       <div className="section-head"><DoorBadge door="dojo" /><h1>This course is not in your library</h1>
         <p className="lede">Open the library to see what you hold.</p></div>
       <a className="btn btn-secondary" href="/library">Back to the library</a>
-    </div>
-  );
-}
-export function Degraded() {
-  return (
-    <div className="reading stack-6">
-      <div className="section-head"><DoorBadge door="dojo" /><h1>Paused</h1>
-        <p className="lede">Your progress is safe. The learning service is not answering right now. Try again in a minute.</p></div>
     </div>
   );
 }

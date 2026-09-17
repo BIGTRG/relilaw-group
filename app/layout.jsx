@@ -6,6 +6,7 @@ const display = Newsreader({ subsets: ['latin'], axes: ['opsz'], weight: 'variab
 const body = Public_Sans({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--nf-body' });
 const mono = IBM_Plex_Mono({ subsets: ['latin'], weight: ['400', '500', '600'], variable: '--nf-mono' });
 import { UplNotice } from '@/components/UplNotice';
+import { THEME_BOOT } from '@/components/ThemeToggle';
 
 export const metadata = {
   title: 'Robinson Employment Law Institute',
@@ -14,7 +15,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable} ${mono.variable}`}>
+    <html lang="en" className={`${display.variable} ${body.variable} ${mono.variable}`} suppressHydrationWarning>
+      <head><script dangerouslySetInnerHTML={{ __html: THEME_BOOT }} /></head>
       <body>
         <a className="skip-link" href="#main">Skip to content</a>
         <main id="main">{children}</main>

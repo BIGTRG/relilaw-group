@@ -137,6 +137,11 @@ export function createCoreClient({
     answerAttempt: ({ attemptId, answers }) =>
       request('POST', `/v1/attempts/${attemptId}/answers`, { body: { answers } }),
     submitAttempt: id => request('POST', `/v1/attempts/${id}/submit`),
+    // grading (admin scope on the tenant key; the answer key is read here on
+    // the server and never leaves it)
+    getAnswerKey: assessmentId => request('GET', `/v1/assessments/${assessmentId}/answer-key`),
+    gradeAttempt: ({ attemptId, grades }) =>
+      request('POST', `/v1/attempts/${attemptId}/grade`, { body: { grades }, idempotencyKey: `grade-${attemptId}` }),
     // credentials
     issueCredential: attemptId =>
       request('POST', '/v1/credentials', { body: { attempt_id: attemptId }, idempotencyKey: `cred-${attemptId}` }),

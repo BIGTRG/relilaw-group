@@ -4,6 +4,8 @@ import { redirect } from 'next/navigation';
 import { currentSession, getAuthServices } from './auth/http.mjs';
 import { createCoreClient } from './core-client.mjs';
 import { createLearningService } from './learning.mjs';
+import { getMailer } from './mail/index.mjs';
+import { publishedSignature } from './pipeline.mjs';
 
 let core;
 export function getCore() {
@@ -13,7 +15,12 @@ export function getCore() {
 
 let learning;
 export function getLearning() {
-  if (!learning) learning = createLearningService({ db: getAuthServices().db, core: getCore() });
+  if (!learning) {
+    const { db } = getAuthServices();
+    let mail = null;
+    try { mail = getMailer(db); } catch { /* SMTP not configured: credentials still issue, mail is skipped */ }
+    learning = createLearningService({ db, core: getCore(), mail, signature: publishedSignature });
+  }
   return learning;
 }
 
