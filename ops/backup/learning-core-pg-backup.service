@@ -1,0 +1,11 @@
+[Unit]
+Description=Learning Core database nightly pg_dump (db learning_core, cluster lc :5433)
+After=postgresql@16-lc.service
+
+[Service]
+Type=oneshot
+User=postgres
+Group=postgres
+ExecStart=/usr/local/lib/learning-core/pg-backup.sh learning_core /var/backups/learning-core 5433 14
+Nice=10
+IOSchedulingClass=idle

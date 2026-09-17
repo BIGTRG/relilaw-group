@@ -26,7 +26,7 @@ export function middleware(req) {
 
   // Surfaces that are the same on every door, or not pages at all.
   if (pathname.startsWith('/api/') || pathname.startsWith('/verify') || pathname.startsWith('/preview') ||
-      pathname.startsWith('/_next') || pathname.includes('.')) {
+      pathname.startsWith('/legal') || pathname.startsWith('/_next') || pathname.includes('.')) {
     return NextResponse.next();
   }
 

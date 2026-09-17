@@ -1,0 +1,10 @@
+[Unit]
+Description=Learning Core host Borg backup to Storage Box (existing /opt/borgbackup/run-backup.sh)
+
+[Service]
+Type=oneshot
+ExecStart=/opt/borgbackup/run-backup.sh
+Nice=10
+IOSchedulingClass=idle
+StandardOutput=append:/var/log/borg-backup.log
+StandardError=append:/var/log/borg-backup.log

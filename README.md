@@ -46,3 +46,22 @@ test/           node --test; DB tests run on embedded Postgres; grep_ci.mjs is
 ## Run tests
 npm test          # unit + embedded-PG gate tests
 npm run test:grep # CI grep gates
+
+## Legal pages, operations, launch docs (M5b)
+- `content/legal/{terms,privacy,disclaimer}.md` are rendered statically at
+  `/legal/terms`, `/legal/privacy`, `/legal/disclaimer` on every door
+  (`middleware.js` passes `/legal/*` through). Renderer: `app/legal/_lib`
+  (heading, paragraph, dash-list subset; no inline markup, no raw HTML), styles
+  `app/legal/legal.css` (tokens only). Every document carries the draft callout
+  until an attorney signs it and the bracketed placeholders are filled.
+- `ops/` holds the nightly `pg_dump` units for the app database (server #2) and
+  the Learning Core (server #3) plus `ops/restore-drill.sh`; see `ops/README.md`
+  for install, drill output and the deploy sequence.
+- `docs/LAUNCH_CHECKLIST.md` (status per item with evidence, relilaw.org mail DNS
+  block), `docs/COMPLIANCE_PRECHECK.md` (UPL, proprietary-school licensing, NC
+  sales tax on digital courses, privacy, payments), `docs/TRAINING_NOTES.md`
+  (screens and step lists for reviewer, staff and learner training).
+- Learning Core v1.0.4 provides `POST /v1/credentials/{id}/revoke`, `rank_meta`
+  and `revoke_reason` on `GET /v1/verify/{ref}`, and `PATCH /v1/learners/{id}`;
+  the app's registry and verify page still use the local overlay and name match
+  and should adopt these next.

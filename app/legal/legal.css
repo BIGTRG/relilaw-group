@@ -1,0 +1,22 @@
+/* Legal documents. Prose rhythm for long statutory-style text. Tokens only. */
+.legal { max-width: 720px; }
+.legal h1 { margin-top: var(--s2); }
+.legal h2 { font-size: var(--t-2xl); margin-top: var(--s7); margin-bottom: var(--s3); }
+.legal h3 { font-size: var(--t-xl); margin-top: var(--s5); margin-bottom: var(--s2); }
+.legal p, .legal li { font-size: var(--t-base); line-height: 1.65; color: var(--text); max-width: 68ch; }
+.legal p { margin: 0 0 var(--s4); }
+.legal ul { padding-left: var(--s5); margin: 0 0 var(--s4); }
+.legal li { margin-bottom: var(--s2); }
+.legal-dates { display: flex; flex-wrap: wrap; gap: var(--s2) var(--s5); font-family: var(--font-mono); font-size: var(--t-sm); color: var(--text-2); margin: 0 0 var(--s5); }
+.legal-draft { background: var(--surface-2); border-radius: 0 var(--r2) var(--r2) 0; padding: var(--s3) var(--s4); margin: 0 0 var(--s6); }
+.legal-draft p { margin: 0; max-width: none; font-size: var(--t-md); }
+.legal-draft .callout-title { font-family: var(--font-mono); letter-spacing: .06em; }
+.legal-toc { border: 1px solid var(--line); border-radius: var(--r2); padding: var(--s4) var(--s5); margin: 0 0 var(--s6); background: var(--surface); }
+.legal-toc-title { font-family: var(--font-mono); font-size: var(--t-xs); letter-spacing: .13em; text-transform: uppercase; color: var(--text-2); margin: 0 0 var(--s2); }
+.legal-toc ul { margin: 0; padding: 0; list-style: none; columns: 2; column-gap: var(--s5); }
+.legal-toc li { font-size: var(--t-sm); margin-bottom: var(--s1); break-inside: avoid; }
+.legal-toc a { display: inline-block; min-height: 24px; line-height: 24px; }
+.legal-related { display: flex; flex-wrap: wrap; gap: var(--s4); margin-top: var(--s7); padding-top: var(--s4); border-top: 1px solid var(--line); }
+.legal-related a { display: inline-block; min-height: 24px; line-height: 24px; font-size: var(--t-sm); }
+@media (max-width: 560px) { .legal-toc ul { columns: 1; } }
+@media (prefers-reduced-motion: no-preference) { .legal a { transition: color 120ms ease; } }
