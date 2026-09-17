@@ -42,7 +42,9 @@ export function getAuthServices() {
 
 export async function requestDoor() {
   const h = await headers();
-  return doorFromHost(h.get('host') ?? '');
+  // After a door rewrite the proxy re-enters with the loopback host and
+  // carries the original in x-reli-host (nginx strips it from the outside).
+  return doorFromHost(h.get('x-reli-host') ?? h.get('host') ?? '');
 }
 
 export async function currentSession() {
