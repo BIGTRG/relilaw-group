@@ -12,7 +12,7 @@ export async function withLearner(request, fn) {
   const s = await currentSession();
   if (!s) return seeOther('/login');
   const { db } = getAuthServices();
-  const { rows } = await db.query('select id, external_ref, display_name, status from app_user where id = $1', [s.session.userId]);
+  const { rows } = await db.query('select id, external_ref, email, display_name, status from app_user where id = $1', [s.session.userId]);
   const user = rows[0];
   if (!user || user.status !== 'active') return seeOther('/login');
   const form = await request.formData();
